@@ -1,0 +1,19 @@
+{
+    "name": "rphiri/bitree",
+    "description": "Bitree Website",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rphiri\\Bitree\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Richard Phiri",
+            "email": "ricphiri@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
