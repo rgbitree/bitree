@@ -983,12 +983,16 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .image-wrapper {
-  position: relative;
-  overflow: hidden;
+.about .image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid var(--accent-color);
   border-radius: 8px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  z-index: -1;
 }
 
 .about .image-wrapper:hover {
