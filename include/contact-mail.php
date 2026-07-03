@@ -8,7 +8,8 @@ require __DIR__ . '/../PHPMailer/src/Exception.php';
 require __DIR__ . '/../PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/../PHPMailer/src/SMTP.php';
 
-require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/env.php';
+bitree_load_env(__DIR__ . '/.env');
 
 function writeDebugLog($message)
 {
@@ -24,26 +25,28 @@ function sendEmail($to, $subject, $message)
     try {
 
         $mail->isSMTP();
-        $mail->Host       = $_ENV['SMTP_HOST'];
+        $mail->Host       = bitree_env('SMTP_HOST');
         $mail->SMTPAuth   = true;
-        $mail->Username   = $_ENV['SMTP_USER'];
-        $mail->Password   = $_ENV['SMTP_PASS'];
+        $mail->Username   = bitree_env('SMTP_USER');
+        $mail->Password   = bitree_env('SMTP_PASS');
 
-        $mail->SMTPSecure = $_ENV['SMTP_SECURE'] === 'TLS'
+        $mail->SMTPSecure = strtoupper((string) bitree_env('SMTP_SECURE', 'TLS')) === 'TLS'
             ? PHPMailer::ENCRYPTION_STARTTLS
             : PHPMailer::ENCRYPTION_SMTPS;
 
-        $mail->Port       = $_ENV['SMTP_PORT'];
+        $mail->Port       = (int) bitree_env('SMTP_PORT', '587');
 
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $mail->SMTPDebug = filter_var(bitree_env('SMTP_DEBUG', 'false'), FILTER_VALIDATE_BOOLEAN)
+            ? SMTP::DEBUG_SERVER
+            : SMTP::DEBUG_OFF;
 
         $mail->Debugoutput = function($str){
             writeDebugLog("SMTP DEBUG: $str");
         };
 
-        $mail->setFrom($_ENV['SMTP_USER'], 'Bitree');
+        $mail->setFrom((string) bitree_env('SMTP_USER'), 'Bitree');
         $mail->addAddress($to);
-        $mail->addReplyTo($_ENV['SMTP_USER'], 'Bitree');
+        $mail->addReplyTo((string) bitree_env('SMTP_USER'), 'Bitree');
 
         $mail->isHTML(false);
         $mail->Subject = $subject;

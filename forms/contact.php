@@ -9,11 +9,9 @@ header("X-XSS-Protection: 1; mode=block");
 
 session_start();
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
 /* ================= LOAD ENV ================= */
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../include');
-$dotenv->load();
+require_once __DIR__ . '/../include/env.php';
+bitree_load_env(__DIR__ . '/../include/.env');
 
 /* ================= BOT SLOWDOWN ================= */
 usleep(300000); // 0.3s delay
@@ -57,49 +55,64 @@ if (!isset($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $cs
     exit;
 }
 
-/* ================= RECAPTCHA ================= */
-$recaptchaToken = $_POST['recaptcha_token'] ?? '';
+$recaptchaEnabled = filter_var(bitree_env('RECAPTCHA_ENABLED', 'true'), FILTER_VALIDATE_BOOLEAN);
 
-captchaDebug([
-    "token_received" => $recaptchaToken
-]);
+if ($recaptchaEnabled) {
+    /* ================= RECAPTCHA ================= */
+    $recaptchaToken = $_POST['recaptcha_token'] ?? '';
 
-if (!$recaptchaToken) {
-    captchaDebug("Token missing");
-    $response['message'] = "Captcha verification failed.";
-    echo json_encode($response);
-    exit;
-}
+    captchaDebug([
+        "token_received" => $recaptchaToken
+    ]);
 
-/* VERIFY WITH GOOGLE */
-$verify = file_get_contents(
-    "https://www.google.com/recaptcha/api/siteverify?secret=" .
-    $_ENV['SECRET_KEY'] .
-    "&response=" . $recaptchaToken .
-    "&remoteip=" . $_SERVER['REMOTE_ADDR']
-);
+    if (!$recaptchaToken) {
+        captchaDebug("Token missing");
+        $response['message'] = "Captcha verification failed.";
+        echo json_encode($response);
+        exit;
+    }
 
-$captcha = json_decode($verify, true);
+    $recaptchaSecret = bitree_env('SECRET_KEY');
 
-captchaDebug([
-    "google_response" => $captcha
-]);
+    if (!$recaptchaSecret) {
+        captchaDebug("Secret key missing");
+        $response['message'] = "Captcha is not configured.";
+        echo json_encode($response);
+        exit;
+    }
 
-$success = $captcha['success'] ?? false;
-$score   = $captcha['score'] ?? 0;
-$action  = $captcha['action'] ?? '';
+    /* VERIFY WITH GOOGLE */
+    $verify = @file_get_contents(
+        "https://www.google.com/recaptcha/api/siteverify?" .
+        http_build_query([
+            'secret' => $recaptchaSecret,
+            'response' => $recaptchaToken,
+            'remoteip' => $_SERVER['REMOTE_ADDR']
+        ])
+    );
 
-captchaDebug([
-    "success" => $success,
-    "score" => $score,
-    "action" => $action
-]);
+    $captcha = json_decode($verify ?: '', true);
 
-if (!$success || $score < 0.5 || $action !== 'contact') {
-    captchaDebug("Captcha FAILED");
-    $response['message'] = "Captcha verification failed.";
-    echo json_encode($response);
-    exit;
+    captchaDebug([
+        "google_response" => $captcha
+    ]);
+
+    $success = $captcha['success'] ?? false;
+    $score   = $captcha['score'] ?? 0;
+    $action  = $captcha['action'] ?? '';
+
+    captchaDebug([
+        "success" => $success,
+        "score" => $score,
+        "action" => $action
+    ]);
+
+    if (!$success || $score < 0.5 || $action !== 'contact') {
+        captchaDebug("Captcha FAILED");
+        $response['message'] = "Captcha verification failed.";
+        echo json_encode($response);
+        exit;
+    }
 }
 
 /* ================= GET USER IP ================= */
@@ -187,7 +200,7 @@ $body .= "Subject: $subject\n\n";
 $body .= "Message:\n$message\n";
 
 /* ================= SEND EMAIL ================= */
-$send = sendEmail($_ENV['SMTP_USER'], "Website Contact: $subject", $body);
+$send = sendEmail((string) bitree_env('SMTP_USER'), "Website Contact: $subject", $body);
 
 if ($send === true) {
     $response['success'] = true;

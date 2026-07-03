@@ -1,0 +1,21 @@
+DirectoryIndex index.php
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^(.+?)\.php$ /$1 [R=301,L]
+
+RewriteRule ^bitree-studio/?$ /studio/ [R=301,L]
+
+RewriteRule ^$ index.php [L]
+RewriteRule ^pricing/?$ pricing/index.php [L]
+RewriteRule ^studio/?$ studio/index.php [L]
+RewriteRule ^contact/?$ contact/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]

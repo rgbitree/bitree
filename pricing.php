@@ -8,7 +8,7 @@
       <h1>Pricing & Packages</h1>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="index.php">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li class="current">Pricing</li>
         </ol>
       </nav>
@@ -70,7 +70,7 @@
                 </ul>
                 <div class="pricing-footer">
                   <span class="outcome">Understand what’s happening in your business</span>
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
 
@@ -90,7 +90,7 @@
                 </ul>
                 <div class="pricing-footer">
                   <span class="outcome">Track performance and make informed decisions</span>
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
 
@@ -110,7 +110,7 @@
                 </ul>
                 <div class="pricing-footer">
                   <span class="outcome">Become a fully data-driven organization</span>
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@
                   <li><i class="bi bi-check-circle"></i> Basic database</li>
                 </ul>
                 <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
 
@@ -158,7 +158,7 @@
                   <li><i class="bi bi-check-circle"></i> Dashboards</li>
                 </ul>
                 <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
 
@@ -176,7 +176,7 @@
                   <li><i class="bi bi-check-circle"></i> Analytics integration</li>
                 </ul>
                 <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@
                   <li><i class="bi bi-check-circle"></i> Mobile responsive</li>
                 </ul>
                 <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
 
@@ -223,7 +223,7 @@
                   <li><i class="bi bi-check-circle"></i> SEO basics</li>
                 </ul>
                 <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
 
@@ -241,53 +241,7 @@
                   <li><i class="bi bi-check-circle"></i> Data integration</li>
                 </ul>
                 <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- DESIGN -->
-            <div class="service-features mt-5">
-              <div class="section-intro-card">
-                <h4>Design & Branding</h4>
-                <img src="assets/img/services/graphic.jpg" alt="">
-                <div class="intro-overlay">
-                    <h5>Design That Communicates & Converts</h5>
-                    <p>Strong branding and visuals that position your business professionally.</p>
-                </div>
-            </div>
-
-              <div class="pricing-card">
-                <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-palette"></i></div>
-                  <div>
-                    <h5>Branding Package</h5>
-                    <span class="price">MWK 250,000 – 800,000</span>
-                  </div>
-                </div>
-                <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Logo & identity</li>
-                  <li><i class="bi bi-check-circle"></i> Social media kit</li>
-                </ul>
-                <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
-                </div>
-              </div>
-
-              <div class="pricing-card">
-                <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-brush"></i></div>
-                  <div>
-                    <h5>Content Design Retainer</h5>
-                    <span class="price">MWK 150,000 – 400,000/month</span>
-                  </div>
-                </div>
-                <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Monthly graphics</li>
-                  <li><i class="bi bi-check-circle"></i> Marketing materials</li>
-                </ul>
-                <div class="pricing-footer">
-                  <a href="index.php#contact" class="btn-pricing">Get a Quote</a>
+                  <a href="/#contact" class="btn-pricing">Get a Quote</a>
                 </div>
               </div>
             </div>
@@ -334,7 +288,7 @@
                   </div>
                 </div>
 
-                <a href="index.php#contact" class="btn btn-primary">Get a Quote</a>
+                <a href="/#contact" class="btn btn-primary">Get a Quote</a>
               </div>
             </div>
 

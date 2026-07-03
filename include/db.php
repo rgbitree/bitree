@@ -12,21 +12,9 @@ if (!defined('APP_INIT')) {
     exit('Access denied');
 }
 
-use Dotenv\Dotenv;
+require_once __DIR__ . '/env.php';
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-// Validate required ENV variables
-$dotenv->required([
-    'DB_HOST',
-    'DB_NAME',
-    'DB_USER',
-    'DB_PASS',
-    'DB_CHARSET'
-]);
+bitree_load_env(__DIR__ . '/.env');
 
 // Secure PDO options
 $options = [
@@ -36,24 +24,32 @@ $options = [
 ];
 
 try {
+    // Validate required ENV variables
+    bitree_env_required([
+        'DB_HOST',
+        'DB_NAME',
+        'DB_USER',
+        'DB_PASS',
+        'DB_CHARSET'
+    ]);
 
     $dsn = sprintf(
         "mysql:host=%s;dbname=%s;charset=%s",
-        $_ENV['DB_HOST'],
-        $_ENV['DB_NAME'],
-        $_ENV['DB_CHARSET']
+        bitree_env('DB_HOST'),
+        bitree_env('DB_NAME'),
+        bitree_env('DB_CHARSET')
     );
 
     $pdo = new PDO(
         $dsn,
-        $_ENV['DB_USER'],
-        $_ENV['DB_PASS'],
+        bitree_env('DB_USER'),
+        bitree_env('DB_PASS'),
         $options
     );
 
-} catch (PDOException $e) {
+} catch (Throwable $e) {
 
-    if ($_ENV['APP_ENV'] === 'production') {
+    if (bitree_env('APP_ENV') === 'production') {
         error_log($e->getMessage());
         die('Database connection failed.');
     } else {

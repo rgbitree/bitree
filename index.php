@@ -1,4 +1,16 @@
-<?php include 'include/header.php'; ?>
+<?php
+session_start();
+require_once __DIR__ . '/include/env.php';
+bitree_load_env(__DIR__ . '/include/.env');
+
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
+$recaptchaSiteKey = bitree_env('SITE_KEY', '');
+
+include 'include/header.php';
+?>
 
 <main class="main">
 
@@ -28,42 +40,42 @@
           </a>
         </div>
 
-        <div class="hero-image-showcase" data-aos="fade-up" data-aos-delay="500">
-          <div class="image-wrapper">
-            <img src="assets/img/about/hero.jpg" class="img-fluid" alt="Bitree Overview">
-
-            <div class="floating-card card-1" data-aos="fade-right" data-aos-delay="600">
-              <div class="card-content">
-                <div class="card-icon">
-                  <i class="bi bi-diagram-3"></i>
-                </div>
-                <div class="card-info">
-                  <h4>Data</h4>
-                  <p>Structured & Connected</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="floating-card card-2" data-aos="fade-left" data-aos-delay="700">
-              <div class="card-content">
-                <div class="card-icon">
-                  <i class="bi bi-cpu"></i>
-                </div>
-                <div class="card-info">
-                  <h4>Systems</h4>
-                  <p>Scalable & Intelligent</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
       </div>
 
     </div>
   </div>
 </section><!-- /Hero Section -->
+
+<!-- Dashboard Showcase Section -->
+<section id="dashboard-showcase" class="dashboard-showcase section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="dashboard-frame">
+      <div class="dashboard-screen">
+        <img src="assets/img/showcase/partflow-dashboard.png" class="img-fluid" alt="PartFlow operations dashboard">
+
+        <div class="dashboard-float dashboard-float-data" data-aos="fade-right" data-aos-delay="200">
+          <div class="dashboard-float-icon">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+          <div>
+            <h4>Data</h4>
+            <p>Structured & Connected</p>
+          </div>
+        </div>
+
+        <div class="dashboard-float dashboard-float-systems" data-aos="fade-left" data-aos-delay="250">
+          <div class="dashboard-float-icon">
+            <i class="bi bi-cpu"></i>
+          </div>
+          <div>
+            <h4>Systems</h4>
+            <p>Scalable & Intelligent</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Dashboard Showcase Section -->
 
 
 <!-- About Section -->
@@ -480,7 +492,7 @@
               <div class="col-lg-7">
                 <div class="visual-content">
                   <div class="main-image">
-                    <img src="assets/img/features/features-2.webp" alt="" class="img-fluid">
+                    <img src="assets/img/features/features-2.jpg" alt="" class="img-fluid">
                     <div class="floating-card">
                       <i class="bi bi-shield-check"></i>
                       <div class="card-content">
@@ -666,7 +678,7 @@
           <p class="section-description mb-4">
             At Bitree, we combine data engineering, analytics, and system development to help organizations move from manual, disconnected processes to integrated and intelligent operations.
           </p>
-          <a href="#" class="cta-button" data-aos="fade-right" data-aos-delay="200">
+          <a href="#call-to-action" class="cta-button" data-aos="fade-right" data-aos-delay="200">
             View Our Approach
           </a>
         </div>
@@ -761,23 +773,6 @@
               </h5>
               <p class="service-description">
                 We connect systems and automate workflows to eliminate inefficiencies, reduce manual work, and ensure seamless operations across your organization.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 06 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-card">
-            <div class="card-number">
-              <span>06</span>
-            </div>
-            <div class="card-content">
-              <h5 class="service-title">
-                <a href="#">Digital Design & Branding</a>
-              </h5>
-              <p class="service-description">
-                We support your systems with strong visual communication, ensuring your platforms, dashboards, and digital presence align with your brand.
               </p>
             </div>
           </div>
@@ -914,7 +909,7 @@
           </div>
 
           <div class="plan-cta">
-            <a href="pricing.php" class="btn-plan">View Full Details</a>
+            <a href="/pricing/" class="btn-plan">View Full Details</a>
           </div>
         </div>
       </div><!-- End Starter -->
@@ -949,7 +944,7 @@
           </div>
 
           <div class="plan-cta">
-            <a href="pricing.php" class="btn-plan">View Full Details</a>
+            <a href="/pricing/" class="btn-plan">View Full Details</a>
           </div>
         </div>
       </div><!-- End BI -->
@@ -983,7 +978,7 @@
           </div>
 
           <div class="plan-cta">
-            <a href="pricing.php" class="btn-plan">View Full Details</a>
+            <a href="/pricing/" class="btn-plan">View Full Details</a>
           </div>
         </div>
       </div><!-- End Advanced -->
@@ -993,6 +988,25 @@
   </div>
 
 </section><!-- /Pricing Section -->
+
+<!-- Studio Banner Section -->
+<section id="studio-banner" class="studio-banner section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="studio-banner-inner">
+      <div class="studio-banner-brand">
+        <img src="assets/img/brand/bitree-studio-logo.png" alt="Bitree Studio">
+      </div>
+      <div class="studio-banner-copy">
+        <span>Creative side of Bitree</span>
+        <h2>Need branding, media, visuals, or digital content?</h2>
+        <p>Visit Bitree Studio for design, brand identity, content creation, and creative media work.</p>
+      </div>
+      <a href="/studio/" class="studio-banner-link">
+        Visit Bitree Studio <i class="bi bi-arrow-up-right"></i>
+      </a>
+    </div>
+  </div>
+</section><!-- /Studio Banner Section -->
 
 <!-- Contact Section -->
 <section id="contact" class="contact section">
@@ -1089,7 +1103,14 @@
             </p>
           </div>
 
-          <form action="forms/contact.php" method="post" class="php-email-form">
+          <form action="/contact/" method="post" class="php-email-form" data-recaptcha-site-key="<?= htmlspecialchars((string) $recaptchaSiteKey, ENT_QUOTES, 'UTF-8'); ?>">
+            <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8'); ?>">
+            <input type="hidden" name="recaptcha_token" value="">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
+
+            <div class="loading">Sending message...</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Message sent successfully.</div>
 
             <div class="mb-3">
               <label for="contactName" class="form-label">Full Name</label>
@@ -1133,5 +1154,9 @@
 <!-- /Contact Section -->
 
   </main>
+
+  <?php if (!empty($recaptchaSiteKey)): ?>
+  <script src="https://www.google.com/recaptcha/api.js?render=<?= urlencode((string) $recaptchaSiteKey); ?>"></script>
+  <?php endif; ?>
 
   <?php include 'include/footer.php'; ?>
