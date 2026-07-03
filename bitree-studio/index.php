@@ -8,8 +8,28 @@
   <meta name="description" content="Bitree Studio is the creative media, branding, and content side of Bitree.">
 
   <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            studio: {
+              green: '#05ea76',
+              yellow: '#ffcd00',
+              cyan: '#00a7c8',
+              rose: '#ff4f87',
+              black: '#111111'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Raleway', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="/assets/css/main.css" rel="stylesheet">
 
@@ -36,12 +56,22 @@
     }
 
     .studio-header {
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       z-index: 20;
+      background: transparent;
+      border-bottom: 1px solid transparent;
+      backdrop-filter: blur(0);
+      transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    body.studio-scrolled .studio-header {
       background: rgba(17, 17, 17, 0.88);
-      border-bottom: 1px solid var(--studio-line);
+      border-bottom-color: var(--studio-line);
       backdrop-filter: blur(16px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
     }
 
     .studio-nav {
@@ -85,10 +115,10 @@
     .studio-hero {
       position: relative;
       overflow: hidden;
-      min-height: calc(100vh - 86px);
+      min-height: 100vh;
       display: flex;
       align-items: center;
-      padding: 54px 0 42px;
+      padding: 140px 0 54px;
       background:
         linear-gradient(135deg, rgba(5, 234, 118, 0.08), transparent 34%),
         linear-gradient(315deg, rgba(255, 79, 135, 0.08), transparent 36%),
@@ -121,7 +151,109 @@
 
     .studio-hero .container {
       position: relative;
+      z-index: 2;
+    }
+
+    .paint-splash {
+      position: absolute;
       z-index: 1;
+      pointer-events: none;
+      opacity: 0.62;
+      filter: saturate(1.15);
+    }
+
+    .paint-splash::before,
+    .paint-splash::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      background: currentColor;
+    }
+
+    .splash-one {
+      top: 118px;
+      left: 4%;
+      width: 155px;
+      height: 112px;
+      color: var(--studio-yellow);
+      background:
+        radial-gradient(circle at 24% 32%, currentColor 0 16px, transparent 17px),
+        radial-gradient(circle at 62% 22%, currentColor 0 10px, transparent 11px),
+        radial-gradient(circle at 78% 58%, currentColor 0 20px, transparent 21px),
+        radial-gradient(circle at 39% 68%, currentColor 0 34px, transparent 35px);
+      transform: rotate(-18deg);
+    }
+
+    .splash-one::before {
+      width: 12px;
+      height: 12px;
+      top: -10px;
+      left: 94px;
+      box-shadow: -86px 74px 0 -2px currentColor, 64px 96px 0 -1px currentColor;
+    }
+
+    .splash-one::after {
+      width: 18px;
+      height: 18px;
+      right: -18px;
+      top: 28px;
+    }
+
+    .splash-two {
+      top: 28%;
+      right: 6%;
+      width: 180px;
+      height: 140px;
+      color: var(--studio-rose);
+      background:
+        radial-gradient(circle at 18% 58%, currentColor 0 22px, transparent 23px),
+        radial-gradient(circle at 48% 34%, currentColor 0 42px, transparent 43px),
+        radial-gradient(circle at 78% 48%, currentColor 0 24px, transparent 25px),
+        radial-gradient(circle at 54% 78%, currentColor 0 18px, transparent 19px);
+      transform: rotate(14deg);
+    }
+
+    .splash-two::before {
+      width: 14px;
+      height: 14px;
+      left: -8px;
+      top: 20px;
+      box-shadow: 154px -18px 0 -1px currentColor, 118px 112px 0 1px currentColor;
+    }
+
+    .splash-two::after {
+      width: 10px;
+      height: 10px;
+      right: 42px;
+      bottom: -12px;
+    }
+
+    .splash-three {
+      left: 46%;
+      bottom: 40px;
+      width: 126px;
+      height: 96px;
+      color: var(--studio-cyan);
+      background:
+        radial-gradient(circle at 28% 44%, currentColor 0 26px, transparent 27px),
+        radial-gradient(circle at 70% 36%, currentColor 0 18px, transparent 19px),
+        radial-gradient(circle at 56% 74%, currentColor 0 15px, transparent 16px);
+      transform: rotate(24deg);
+    }
+
+    .splash-three::before {
+      width: 9px;
+      height: 9px;
+      top: -8px;
+      right: 24px;
+      box-shadow: -76px 92px 0 -1px currentColor, 72px 58px 0 currentColor;
+    }
+
+    .splash-three::after {
+      width: 13px;
+      height: 13px;
+      left: -12px;
+      top: 44px;
     }
 
     .studio-eyebrow {
@@ -491,42 +623,212 @@
     }
 
     .studio-cta {
+      position: relative;
+      overflow: hidden;
       padding: 76px 0;
       background:
-        linear-gradient(135deg, rgba(255, 205, 0, 0.24), transparent 46%),
-        linear-gradient(315deg, rgba(255, 79, 135, 0.18), transparent 38%),
+        linear-gradient(120deg, rgba(5, 234, 118, 0.22), transparent 32%),
+        linear-gradient(245deg, rgba(255, 205, 0, 0.28), transparent 42%),
+        linear-gradient(315deg, rgba(255, 79, 135, 0.22), transparent 38%),
+        linear-gradient(45deg, rgba(0, 167, 200, 0.18), transparent 36%),
         #111111;
     }
 
+    .studio-cta .paint-splash {
+      z-index: 0;
+      opacity: 0.42;
+    }
+
+    .splash-four {
+      top: 28px;
+      right: 12%;
+      width: 150px;
+      height: 110px;
+      color: var(--studio-green);
+      background:
+        radial-gradient(circle at 22% 42%, currentColor 0 28px, transparent 29px),
+        radial-gradient(circle at 56% 34%, currentColor 0 18px, transparent 19px),
+        radial-gradient(circle at 74% 70%, currentColor 0 22px, transparent 23px),
+        radial-gradient(circle at 42% 76%, currentColor 0 14px, transparent 15px);
+      transform: rotate(-12deg);
+    }
+
+    .splash-four::before {
+      width: 10px;
+      height: 10px;
+      left: -8px;
+      top: 20px;
+      box-shadow: 128px -8px 0 2px currentColor, 84px 104px 0 -1px currentColor;
+    }
+
+    .splash-four::after {
+      width: 16px;
+      height: 16px;
+      right: -12px;
+      top: 58px;
+    }
+
     .studio-cta-panel {
+      position: relative;
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: center;
       gap: 28px;
-      padding: 34px;
+      padding: clamp(28px, 5vw, 46px);
       border-radius: 16px;
-      background: rgba(31, 31, 31, 0.94);
-      border: 1px solid var(--studio-line);
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(5, 234, 118, 0.20), transparent 34%),
+        linear-gradient(300deg, rgba(255, 205, 0, 0.24), transparent 38%),
+        rgba(22, 22, 22, 0.96);
+      border: 1px solid rgba(255, 205, 0, 0.28);
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.36);
+    }
+
+    .studio-cta-panel::before,
+    .studio-cta-panel::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .studio-cta-panel::before {
+      inset: 0;
+      background:
+        linear-gradient(90deg, var(--studio-green), var(--studio-yellow), var(--studio-rose), var(--studio-cyan));
+      height: 5px;
+    }
+
+    .studio-cta-panel::after {
+      right: -80px;
+      bottom: -120px;
+      width: 280px;
+      height: 280px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+    }
+
+    .studio-cta-panel > * {
+      position: relative;
+      z-index: 1;
     }
 
     .studio-cta h2 {
       font-size: clamp(30px, 4vw, 50px);
       font-weight: 950;
       margin-bottom: 10px;
+      color: #ffffff;
     }
 
     .studio-cta p {
-      color: var(--studio-muted);
+      color: rgba(255, 255, 255, 0.78);
       margin: 0;
       font-size: 16px;
       line-height: 1.7;
     }
 
+    .data-systems-banner {
+      padding: 34px 0 42px;
+      background: #050505;
+    }
+
+    .data-systems-card {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 28px;
+      padding: clamp(24px, 4vw, 42px);
+      overflow: hidden;
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(5, 234, 118, 0.18), transparent 42%),
+        linear-gradient(315deg, rgba(5, 234, 118, 0.08), transparent 46%),
+        #121111;
+      border: 1px solid rgba(5, 234, 118, 0.28);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+    }
+
+    .data-systems-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -6% -40% auto;
+      width: 360px;
+      height: 360px;
+      border: 1px solid rgba(5, 234, 118, 0.24);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .data-systems-copy {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .data-systems-logo {
+      width: min(260px, 46vw);
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .data-systems-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--studio-green);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .data-systems-copy h2 {
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.02;
+      font-weight: 950;
+      margin: 0 0 10px;
+      color: #ffffff;
+    }
+
+    .data-systems-copy p {
+      max-width: 560px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.7;
+    }
+
+    .data-systems-action {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      background: var(--studio-green);
+      color: #121111;
+      font-weight: 950;
+      white-space: nowrap;
+      box-shadow: 0 14px 30px rgba(5, 234, 118, 0.2);
+    }
+
+    .data-systems-action:hover {
+      color: #121111;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 38px rgba(5, 234, 118, 0.28);
+    }
+
     .studio-footer {
       padding: 32px 0;
-      background: #101010;
+      background: #050505;
       color: var(--studio-muted);
       font-size: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .studio-footer a {
@@ -564,12 +866,25 @@
       .studio-cta-panel {
         grid-template-columns: 1fr;
       }
+
+      .data-systems-card {
+        grid-template-columns: 1fr;
+      }
+
+      .data-systems-copy {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .data-systems-logo {
+        width: min(230px, 68vw);
+      }
     }
 
     @media (max-width: 575px) {
       .studio-hero {
         min-height: auto;
-        padding-top: 54px;
+        padding-top: 116px;
       }
 
       .studio-nav {
@@ -585,8 +900,29 @@
         width: 100%;
       }
 
+      .data-systems-action {
+        width: 100%;
+      }
+
       .studio-step {
         grid-template-columns: 1fr;
+      }
+
+      .paint-splash {
+        opacity: 0.32;
+        transform: scale(0.72);
+      }
+
+      .splash-one {
+        left: -28px;
+      }
+
+      .splash-two {
+        right: -44px;
+      }
+
+      .splash-three {
+        display: none;
       }
     }
   </style>
@@ -603,7 +939,7 @@
         <a href="#packages" class="studio-link">Packages</a>
         <a href="/" class="studio-link">Data Systems</a>
         <a href="mailto:bitreemw@gmail.com?subject=Bitree%20Studio%20Inquiry" class="studio-pill">
-          Book Studio <i class="bi bi-arrow-right"></i>
+          Book Studio <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
         </a>
       </nav>
     </div>
@@ -611,10 +947,13 @@
 
   <main>
     <section class="studio-hero">
+      <span class="paint-splash splash-one" aria-hidden="true"></span>
+      <span class="paint-splash splash-two" aria-hidden="true"></span>
+      <span class="paint-splash splash-three" aria-hidden="true"></span>
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-7" data-aos="fade-right">
-            <span class="studio-eyebrow"><i class="bi bi-stars"></i> Creative Side of Bitree</span>
+            <span class="studio-eyebrow"><span class="ui-icon ui-icon-stars" aria-hidden="true"></span> Creative Side of Bitree</span>
             <h1>Brands with <span>spark</span>. Content with rhythm.</h1>
             <p>
               Bitree Studio creates visual identities, campaign assets, digital content, and media
@@ -622,17 +961,17 @@
             </p>
             <div class="studio-actions">
               <a href="mailto:bitreemw@gmail.com?subject=Bitree%20Studio%20Inquiry" class="studio-btn primary">
-                Start a Studio Project <i class="bi bi-arrow-right"></i>
+                Start a Studio Project <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
               </a>
               <a href="/" class="studio-btn">
-                Visit Data Systems <i class="bi bi-diagram-3"></i>
+                Visit Data Systems <span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span>
               </a>
             </div>
             <div class="studio-sticker-row">
-              <span class="studio-sticker"><i class="bi bi-palette2"></i> Brand kits</span>
-              <span class="studio-sticker"><i class="bi bi-camera-reels"></i> Media direction</span>
-              <span class="studio-sticker"><i class="bi bi-grid-3x3-gap"></i> Social content</span>
-              <span class="studio-sticker"><i class="bi bi-window-stack"></i> Interface visuals</span>
+              <span class="studio-sticker"><span class="ui-icon ui-icon-palette2" aria-hidden="true"></span> Brand kits</span>
+              <span class="studio-sticker"><span class="ui-icon ui-icon-camera-reels" aria-hidden="true"></span> Media direction</span>
+              <span class="studio-sticker"><span class="ui-icon ui-icon-grid-3x3-gap" aria-hidden="true"></span> Social content</span>
+              <span class="studio-sticker"><span class="ui-icon ui-icon-window-stack" aria-hidden="true"></span> Interface visuals</span>
             </div>
           </div>
           <div class="col-lg-5" data-aos="fade-left">
@@ -640,8 +979,8 @@
               <div class="studio-logo-stage">
                 <img src="/assets/img/brand/bitree-studio-logo.png" alt="Bitree Studio logo">
               </div>
-              <div class="studio-note one"><i class="bi bi-lightning-charge-fill"></i> Fresh visuals</div>
-              <div class="studio-note two"><i class="bi bi-magic"></i> Made for attention</div>
+              <div class="studio-note one"><span class="ui-icon ui-icon-lightning-charge-fill" aria-hidden="true"></span> Fresh visuals</div>
+              <div class="studio-note two"><span class="ui-icon ui-icon-magic" aria-hidden="true"></span> Made for attention</div>
             </div>
           </div>
         </div>
@@ -677,28 +1016,28 @@
         <div class="row g-4">
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="studio-service" style="--tile-color: var(--studio-green);">
-              <i class="bi bi-palette2"></i>
+              <span class="ui-icon ui-icon-palette2" aria-hidden="true"></span>
               <h3>Brand Identity</h3>
               <p>Logos, visual direction, brand kits, launch palettes, and practical brand rules.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
             <div class="studio-service" style="--tile-color: var(--studio-yellow);">
-              <i class="bi bi-camera-reels"></i>
+              <span class="ui-icon ui-icon-camera-reels" aria-hidden="true"></span>
               <h3>Media Direction</h3>
               <p>Photo, video, product, and campaign direction for social and commercial channels.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="220">
             <div class="studio-service" style="--tile-color: var(--studio-cyan);">
-              <i class="bi bi-grid-3x3-gap"></i>
+              <span class="ui-icon ui-icon-grid-3x3-gap" aria-hidden="true"></span>
               <h3>Digital Content</h3>
               <p>Social graphics, templates, announcements, launches, and weekly content systems.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="280">
             <div class="studio-service" style="--tile-color: var(--studio-rose);">
-              <i class="bi bi-window-stack"></i>
+              <span class="ui-icon ui-icon-window-stack" aria-hidden="true"></span>
               <h3>Product Visuals</h3>
               <p>Dashboard polish, pitch visuals, app screens, and product explainers with bite.</p>
             </div>
@@ -722,9 +1061,9 @@
               <h3>Brand Spark</h3>
               <p>For businesses that need a memorable identity and a practical visual foundation.</p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Logo direction</li>
-                <li><i class="bi bi-check-circle-fill"></i> Color and type palette</li>
-                <li><i class="bi bi-check-circle-fill"></i> Basic brand kit</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Logo direction</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Color and type palette</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Basic brand kit</li>
               </ul>
             </div>
           </div>
@@ -734,9 +1073,9 @@
               <h3>Content Pulse</h3>
               <p>For teams that need fresh social assets and campaigns without starting from zero each week.</p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Monthly content templates</li>
-                <li><i class="bi bi-check-circle-fill"></i> Campaign visuals</li>
-                <li><i class="bi bi-check-circle-fill"></i> Launch and promo assets</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Monthly content templates</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Campaign visuals</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Launch and promo assets</li>
               </ul>
             </div>
           </div>
@@ -746,9 +1085,9 @@
               <h3>Studio Buildout</h3>
               <p>For brands that need deeper creative direction across identity, media, and product visuals.</p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Full identity refresh</li>
-                <li><i class="bi bi-check-circle-fill"></i> Media art direction</li>
-                <li><i class="bi bi-check-circle-fill"></i> Product and pitch visuals</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Full identity refresh</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Media art direction</li>
+                <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Product and pitch visuals</li>
               </ul>
             </div>
           </div>
@@ -793,6 +1132,7 @@
     </section>
 
     <section class="studio-cta">
+      <span class="paint-splash splash-four" aria-hidden="true"></span>
       <div class="container">
         <div class="studio-cta-panel" data-aos="fade-up">
           <div>
@@ -800,7 +1140,25 @@
             <p>Send the project idea, launch date, or rough creative need. The Studio can shape it from there.</p>
           </div>
           <a href="mailto:bitreemw@gmail.com?subject=Bitree%20Studio%20Inquiry" class="studio-btn yellow">
-            Start with Bitree Studio <i class="bi bi-arrow-right"></i>
+            Start with Bitree Studio <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="data-systems-banner" aria-label="Bitree Data and Systems">
+      <div class="container">
+        <div class="data-systems-card" data-aos="fade-up">
+          <div class="data-systems-copy">
+            <img class="data-systems-logo" src="/assets/img/brand/bitree-data-systems-logo.png" alt="Bitree Data & Systems">
+            <div>
+              <span class="data-systems-label">Bitree Data & Systems</span>
+              <h2>Need the systems side of Bitree?</h2>
+              <p>Move from creative brand work into structured data, dashboards, operations tools, and intelligent business systems.</p>
+            </div>
+          </div>
+          <a class="data-systems-action" href="/">
+            Visit Data & Systems <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
           </a>
         </div>
       </div>
@@ -810,17 +1168,17 @@
   <footer class="studio-footer">
     <div class="container d-flex flex-column flex-md-row gap-2 justify-content-between">
       <span>&copy; Copyright Bitree Studio. All Rights Reserved</span>
-      <span>
-        <a href="/">Back to Bitree Data & Systems</a>
-        <span class="mx-2">/</span>
-        bitreemw@gmail.com
-      </span>
+      <span>bitreemw@gmail.com</span>
     </div>
   </footer>
 
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/vendor/aos/aos.js"></script>
   <script>
+    const toggleStudioHeader = () => {
+      document.body.classList.toggle("studio-scrolled", window.scrollY > 12);
+    };
+    window.addEventListener("scroll", toggleStudioHeader, { passive: true });
+    window.addEventListener("load", toggleStudioHeader);
     AOS.init({ duration: 650, easing: "ease-in-out", once: true });
   </script>
 </body>

@@ -21,8 +21,11 @@
 
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
+    mobileNavToggleBtn.classList.toggle('is-open');
+    mobileNavToggleBtn.setAttribute(
+      'aria-label',
+      mobileNavToggleBtn.classList.contains('is-open') ? 'Close menu' : 'Open menu'
+    );
   }
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);

@@ -32,10 +32,10 @@ include 'include/header.php';
         <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
           <a href="#" class="action-btn primary">
             <span>Explore Our Solutions</span>
-            <i class="bi bi-arrow-right"></i>
+            <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
           </a>
           <a href="#contact" class="action-btn secondary glightbox">
-            <i class="bi bi-play-circle"></i>
+            <span class="ui-icon ui-icon-play-circle" aria-hidden="true"></span>
             <span>Start a Project</span>
           </a>
         </div>
@@ -55,7 +55,7 @@ include 'include/header.php';
 
         <div class="dashboard-float dashboard-float-data" data-aos="fade-right" data-aos-delay="200">
           <div class="dashboard-float-icon">
-            <i class="bi bi-diagram-3"></i>
+            <span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span>
           </div>
           <div>
             <h4>Data</h4>
@@ -65,7 +65,7 @@ include 'include/header.php';
 
         <div class="dashboard-float dashboard-float-systems" data-aos="fade-left" data-aos-delay="250">
           <div class="dashboard-float-icon">
-            <i class="bi bi-cpu"></i>
+            <span class="ui-icon ui-icon-cpu" aria-hidden="true"></span>
           </div>
           <div>
             <h4>Systems</h4>
@@ -108,7 +108,7 @@ include 'include/header.php';
 
               <div class="col-md-6">
                 <div class="feature-item">
-                  <i class="bi bi-database"></i>
+                  <span class="ui-icon ui-icon-database" aria-hidden="true"></span>
                   <h5>Data Structuring</h5>
                   <p>Organizing and managing data for consistency, accessibility, and scalability.</p>
                 </div>
@@ -116,7 +116,7 @@ include 'include/header.php';
 
               <div class="col-md-6">
                 <div class="feature-item">
-                  <i class="bi bi-gear"></i>
+                  <span class="ui-icon ui-icon-gear" aria-hidden="true"></span>
                   <h5>System Development</h5>
                   <p>Building scalable systems that streamline and automate business processes.</p>
                 </div>
@@ -124,7 +124,7 @@ include 'include/header.php';
 
               <div class="col-md-6">
                 <div class="feature-item">
-                  <i class="bi bi-bar-chart"></i>
+                  <span class="ui-icon ui-icon-bar-chart" aria-hidden="true"></span>
                   <h5>Analytics & Insights</h5>
                   <p>Transforming data into actionable insights for better decision-making.</p>
                 </div>
@@ -132,7 +132,7 @@ include 'include/header.php';
 
               <div class="col-md-6">
                 <div class="feature-item">
-                  <i class="bi bi-diagram-2"></i>
+                  <span class="ui-icon ui-icon-diagram-2" aria-hidden="true"></span>
                   <h5>Integrated Operations</h5>
                   <p>Connecting systems and processes for efficiency and operational clarity.</p>
                 </div>
@@ -202,7 +202,7 @@ include 'include/header.php';
         <div class="feature-number">01</div>
         <div class="feature-content">
           <div class="feature-icon">
-            <i class="bi bi-diagram-3"></i>
+            <span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span>
           </div>
           <h4>Structured Data Environments</h4>
           <p>
@@ -219,7 +219,7 @@ include 'include/header.php';
         <div class="feature-number">02</div>
         <div class="feature-content">
           <div class="feature-icon">
-            <i class="bi bi-layers"></i>
+            <span class="ui-icon ui-icon-layers" aria-hidden="true"></span>
           </div>
           <h4>Integrated Systems</h4>
           <p>
@@ -236,7 +236,7 @@ include 'include/header.php';
         <div class="feature-number">03</div>
         <div class="feature-content">
           <div class="feature-icon">
-            <i class="bi bi-eye"></i>
+            <span class="ui-icon ui-icon-eye" aria-hidden="true"></span>
           </div>
           <h4>Operational Visibility</h4>
           <p>
@@ -253,7 +253,7 @@ include 'include/header.php';
         <div class="feature-number">04</div>
         <div class="feature-content">
           <div class="feature-icon">
-            <i class="bi bi-graph-up-arrow"></i>
+            <span class="ui-icon ui-icon-graph-up-arrow" aria-hidden="true"></span>
           </div>
           <h4>Informed Decision-Making</h4>
           <p>
@@ -270,7 +270,7 @@ include 'include/header.php';
         <div class="feature-number">05</div>
         <div class="feature-content">
           <div class="feature-icon">
-            <i class="bi bi-gear"></i>
+            <span class="ui-icon ui-icon-gear" aria-hidden="true"></span>
           </div>
           <h4>Process Optimization</h4>
           <p>
@@ -287,7 +287,7 @@ include 'include/header.php';
         <div class="feature-number">06</div>
         <div class="feature-content">
           <div class="feature-icon">
-            <i class="bi bi-arrows-expand"></i>
+            <span class="ui-icon ui-icon-arrows-expand" aria-hidden="true"></span>
           </div>
           <h4>Scalable Foundations</h4>
           <p>
@@ -317,7 +317,7 @@ include 'include/header.php';
             <li class="nav-item">
               <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-1">
                 <div class="tab-icon">
-                  <i class="bi bi-rocket-takeoff"></i>
+                  <span class="ui-icon ui-icon-rocket-takeoff" aria-hidden="true"></span>
                 </div>
                 <div class="tab-content">
                   <h5>Innovation</h5>
@@ -329,7 +329,7 @@ include 'include/header.php';
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-2">
                 <div class="tab-icon">
-                  <i class="bi bi-shield-shaded"></i>
+                  <span class="ui-icon ui-icon-shield-shaded" aria-hidden="true"></span>
                 </div>
                 <div class="tab-content">
                   <h5>Security</h5>
@@ -341,7 +341,7 @@ include 'include/header.php';
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-3">
                 <div class="tab-icon">
-                  <i class="bi bi-lightning-charge"></i>
+                  <span class="ui-icon ui-icon-lightning-charge" aria-hidden="true"></span>
                 </div>
                 <div class="tab-content">
                   <h5>Performance</h5>
@@ -353,7 +353,7 @@ include 'include/header.php';
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-4">
                 <div class="tab-icon">
-                  <i class="bi bi-heart-pulse"></i>
+                  <span class="ui-icon ui-icon-heart-pulse" aria-hidden="true"></span>
                 </div>
                 <div class="tab-content">
                   <h5>Support</h5>
@@ -373,7 +373,7 @@ include 'include/header.php';
               <div class="col-lg-5">
                 <div class="content-wrapper">
                   <div class="icon-badge">
-                    <i class="bi bi-rocket-takeoff"></i>
+                    <span class="ui-icon ui-icon-rocket-takeoff" aria-hidden="true"></span>
                   </div>
                   <h3>Data-Driven Transformation</h3>
                   <p>
@@ -382,19 +382,19 @@ include 'include/header.php';
 
                   <div class="feature-grid">
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Organize and centralize business data</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Eliminate disconnected tools and workflows</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Improve visibility across operations</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Enable smarter, data-backed decisions</span>
                     </div>
                   </div>
@@ -414,7 +414,7 @@ include 'include/header.php';
                     </div>
                   </div>
 
-                  <a href="#" class="btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                  <a href="#" class="btn-primary">Learn More <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span></a>
                 </div>
               </div>
 
@@ -423,7 +423,7 @@ include 'include/header.php';
                   <div class="main-image">
                     <img src="assets/img/features/features-2.jpg" alt="" class="img-fluid">
                     <div class="floating-card">
-                      <i class="bi bi-graph-up-arrow"></i>
+                      <span class="ui-icon ui-icon-graph-up-arrow" aria-hidden="true"></span>
                       <div class="card-content">
                         <span>Insight</span>
                         <strong>Better Decisions</strong>
@@ -444,7 +444,7 @@ include 'include/header.php';
               <div class="col-lg-5">
                 <div class="content-wrapper">
                   <div class="icon-badge">
-                    <i class="bi bi-shield-shaded"></i>
+                    <span class="ui-icon ui-icon-shield-shaded" aria-hidden="true"></span>
                   </div>
                   <h3>Reliable & Structured Systems</h3>
                   <p>
@@ -453,19 +453,19 @@ include 'include/header.php';
 
                   <div class="feature-grid">
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Consistent and well-structured data environments</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Secure handling of business information</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Systems designed for long-term use</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Reduced risk from manual processes</span>
                     </div>
                   </div>
@@ -485,7 +485,7 @@ include 'include/header.php';
                     </div>
                   </div>
 
-                  <a href="#" class="btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                  <a href="#" class="btn-primary">Learn More <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span></a>
                 </div>
               </div>
 
@@ -494,7 +494,7 @@ include 'include/header.php';
                   <div class="main-image">
                     <img src="assets/img/features/features-2.jpg" alt="" class="img-fluid">
                     <div class="floating-card">
-                      <i class="bi bi-shield-check"></i>
+                      <span class="ui-icon ui-icon-shield-check" aria-hidden="true"></span>
                       <div class="card-content">
                         <span>Systems</span>
                         <strong>Reliable & Secure</strong>
@@ -515,7 +515,7 @@ include 'include/header.php';
               <div class="col-lg-5">
                 <div class="content-wrapper">
                   <div class="icon-badge">
-                    <i class="bi bi-lightning-charge"></i>
+                    <span class="ui-icon ui-icon-lightning-charge" aria-hidden="true"></span>
                   </div>
                   <h3>Efficient Operations</h3>
                   <p>
@@ -524,19 +524,19 @@ include 'include/header.php';
 
                   <div class="feature-grid">
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Reduce manual and repetitive tasks</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Improve process efficiency across teams</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Streamline business workflows</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Enhance overall productivity</span>
                     </div>
                   </div>
@@ -556,7 +556,7 @@ include 'include/header.php';
                     </div>
                   </div>
 
-                  <a href="#" class="btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                  <a href="#" class="btn-primary">Learn More <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span></a>
                 </div>
               </div>
 
@@ -565,7 +565,7 @@ include 'include/header.php';
                   <div class="main-image">
                     <img src="assets/img/features/features-6.webp" alt="" class="img-fluid">
                     <div class="floating-card">
-                      <i class="bi bi-speedometer2"></i>
+                      <span class="ui-icon ui-icon-speedometer2" aria-hidden="true"></span>
                       <div class="card-content">
                         <span>Efficiency</span>
                         <strong>Optimized Workflows</strong>
@@ -586,7 +586,7 @@ include 'include/header.php';
               <div class="col-lg-5">
                 <div class="content-wrapper">
                   <div class="icon-badge">
-                    <i class="bi bi-heart-pulse"></i>
+                    <span class="ui-icon ui-icon-heart-pulse" aria-hidden="true"></span>
                   </div>
                   <h3>Collaborative Approach</h3>
                   <p>
@@ -595,19 +595,19 @@ include 'include/header.php';
 
                   <div class="feature-grid">
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Client-focused solution design</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Close collaboration throughout projects</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Solutions aligned to real operations</span>
                     </div>
                     <div class="feature-item">
-                      <i class="bi bi-check-circle-fill"></i>
+                      <span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span>
                       <span>Continuous improvement and support</span>
                     </div>
                   </div>
@@ -627,7 +627,7 @@ include 'include/header.php';
                     </div>
                   </div>
 
-                  <a href="#" class="btn-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                  <a href="#" class="btn-primary">Learn More <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span></a>
                 </div>
               </div>
 
@@ -636,7 +636,7 @@ include 'include/header.php';
                   <div class="main-image">
                     <img src="assets/img/features/features-1.webp" alt="" class="img-fluid">
                     <div class="floating-card">
-                      <i class="bi bi-people"></i>
+                      <span class="ui-icon ui-icon-people" aria-hidden="true"></span>
                       <div class="card-content">
                         <span>Partnership</span>
                         <strong>Working Together</strong>
@@ -671,7 +671,7 @@ include 'include/header.php';
       <div class="col-lg-6">
         <div class="intro-content" data-aos="fade-right" data-aos-delay="100">
           <div class="section-badge mb-3" data-aos="zoom-in" data-aos-delay="50">
-            <i class="bi bi-star-fill"></i>
+            <span class="ui-icon ui-icon-star-fill" aria-hidden="true"></span>
             <span>WHAT WE DO</span>
           </div>
           <h2 class="section-heading mb-4">Building Systems That Power Smarter Businesses</h2>
@@ -801,11 +801,11 @@ include 'include/header.php';
         </p>
 
         <div class="features d-flex flex-wrap gap-3 mb-4">
-          <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Assess – Understand processes & data flow</span></div>
-          <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Design – Architect systems & data structures</span></div>
-          <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Develop – Build tailored solutions</span></div>
-          <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Integrate – Connect systems & workflows</span></div>
-          <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Optimize – Improve performance continuously</span></div>
+          <div class="feature-item"><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span><span>Assess – Understand processes & data flow</span></div>
+          <div class="feature-item"><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span><span>Design – Architect systems & data structures</span></div>
+          <div class="feature-item"><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span><span>Develop – Build tailored solutions</span></div>
+          <div class="feature-item"><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span><span>Integrate – Connect systems & workflows</span></div>
+          <div class="feature-item"><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span><span>Optimize – Improve performance continuously</span></div>
         </div>
 
         <div class="cta-buttons d-flex flex-wrap gap-3">
@@ -821,7 +821,7 @@ include 'include/header.php';
           <h4 class="mb-4">Why Bitree?</h4>
 
           <div class="why-item">
-            <i class="bi bi-database"></i>
+            <span class="ui-icon ui-icon-database" aria-hidden="true"></span>
             <div>
               <h6>Data-First Approach</h6>
               <p>We prioritize structured data as the foundation of every system we build.</p>
@@ -829,7 +829,7 @@ include 'include/header.php';
           </div>
 
           <div class="why-item">
-            <i class="bi bi-diagram-3"></i>
+            <span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span>
             <div>
               <h6>Analytics + Systems Combined</h6>
               <p>We bridge the gap between insights and execution through integrated solutions.</p>
@@ -837,7 +837,7 @@ include 'include/header.php';
           </div>
 
           <div class="why-item">
-            <i class="bi bi-briefcase"></i>
+            <span class="ui-icon ui-icon-briefcase" aria-hidden="true"></span>
             <div>
               <h6>Business-Focused Execution</h6>
               <p>Every solution is designed to solve real operational challenges, not just technical problems.</p>
@@ -845,7 +845,7 @@ include 'include/header.php';
           </div>
 
           <div class="why-item">
-            <i class="bi bi-arrows-expand"></i>
+            <span class="ui-icon ui-icon-arrows-expand" aria-hidden="true"></span>
             <div>
               <h6>Scalable Solutions</h6>
               <p>Our systems are built to grow with your organization, from startup to enterprise.</p>
@@ -885,7 +885,7 @@ include 'include/header.php';
         <div class="pricing-card">
           <div class="plan-header">
             <div class="plan-icon">
-              <i class="bi bi-bar-chart"></i>
+              <span class="ui-icon ui-icon-bar-chart" aria-hidden="true"></span>
             </div>
             <h3>Starter Insights</h3>
             <p>For small businesses starting with data</p>
@@ -900,11 +900,11 @@ include 'include/header.php';
 
           <div class="plan-features">
             <ul>
-              <li><i class="bi bi-check-circle-fill"></i> Data audit & assessment</li>
-              <li><i class="bi bi-check-circle-fill"></i> Basic data cleaning</li>
-              <li><i class="bi bi-check-circle-fill"></i> Simple analysis & reporting</li>
-              <li><i class="bi bi-check-circle-fill"></i> 1 performance dashboard</li>
-              <li class="disabled"><i class="bi bi-x-circle-fill"></i> Advanced analytics & automation</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Data audit & assessment</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Basic data cleaning</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Simple analysis & reporting</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> 1 performance dashboard</li>
+              <li class="disabled"><span class="ui-icon ui-icon-x-circle-fill" aria-hidden="true"></span> Advanced analytics & automation</li>
             </ul>
           </div>
 
@@ -920,7 +920,7 @@ include 'include/header.php';
           <div class="popular-tag">Recommended</div>
           <div class="plan-header">
             <div class="plan-icon">
-              <i class="bi bi-graph-up-arrow"></i>
+              <span class="ui-icon ui-icon-graph-up-arrow" aria-hidden="true"></span>
             </div>
             <h3>Business Intelligence</h3>
             <p>For growing businesses and teams</p>
@@ -935,11 +935,11 @@ include 'include/header.php';
 
           <div class="plan-features">
             <ul>
-              <li><i class="bi bi-check-circle-fill"></i> Data structuring & setup</li>
-              <li><i class="bi bi-check-circle-fill"></i> Advanced data analysis</li>
-              <li><i class="bi bi-check-circle-fill"></i> 2–4 interactive dashboards</li>
-              <li><i class="bi bi-check-circle-fill"></i> KPI tracking system</li>
-              <li class="disabled"><i class="bi bi-x-circle-fill"></i> Full system integration</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Data structuring & setup</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Advanced data analysis</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> 2–4 interactive dashboards</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> KPI tracking system</li>
+              <li class="disabled"><span class="ui-icon ui-icon-x-circle-fill" aria-hidden="true"></span> Full system integration</li>
             </ul>
           </div>
 
@@ -954,7 +954,7 @@ include 'include/header.php';
         <div class="pricing-card">
           <div class="plan-header">
             <div class="plan-icon">
-              <i class="bi bi-diagram-3"></i>
+              <span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span>
             </div>
             <h3>Advanced Data Systems</h3>
             <p>For organizations ready to scale</p>
@@ -969,11 +969,11 @@ include 'include/header.php';
 
           <div class="plan-features">
             <ul>
-              <li><i class="bi bi-check-circle-fill"></i> Full database design & setup</li>
-              <li><i class="bi bi-check-circle-fill"></i> Data pipeline development</li>
-              <li><i class="bi bi-check-circle-fill"></i> Multiple dashboards</li>
-              <li><i class="bi bi-check-circle-fill"></i> Forecasting & insights</li>
-              <li><i class="bi bi-check-circle-fill"></i> System integration</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Full database design & setup</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Data pipeline development</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Multiple dashboards</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> Forecasting & insights</li>
+              <li><span class="ui-icon ui-icon-check-circle-fill" aria-hidden="true"></span> System integration</li>
             </ul>
           </div>
 
@@ -1002,7 +1002,7 @@ include 'include/header.php';
         <p>Visit Bitree Studio for design, brand identity, content creation, and creative media work.</p>
       </div>
       <a href="/studio/" class="studio-banner-link">
-        Visit Bitree Studio <i class="bi bi-arrow-up-right"></i>
+        Visit Bitree Studio <span class="ui-icon ui-icon-arrow-up-right" aria-hidden="true"></span>
       </a>
     </div>
   </div>
@@ -1037,7 +1037,7 @@ include 'include/header.php';
 
             <div class="info-item" data-aos="zoom-in" data-aos-delay="250">
               <div class="info-icon">
-                <i class="bi bi-envelope-fill"></i>
+                <span class="ui-icon ui-icon-envelope-fill" aria-hidden="true"></span>
               </div>
               <div class="info-content">
                 <h5>Email Us</h5>
@@ -1047,7 +1047,7 @@ include 'include/header.php';
 
             <div class="info-item" data-aos="zoom-in" data-aos-delay="300">
               <div class="info-icon">
-                <i class="bi bi-telephone-fill"></i>
+                <span class="ui-icon ui-icon-telephone-fill" aria-hidden="true"></span>
               </div>
               <div class="info-content">
                 <h5>Call or WhatsApp</h5>
@@ -1057,7 +1057,7 @@ include 'include/header.php';
 
             <div class="info-item" data-aos="zoom-in" data-aos-delay="350">
               <div class="info-icon">
-                <i class="bi bi-globe"></i>
+                <span class="ui-icon ui-icon-globe" aria-hidden="true"></span>
               </div>
               <div class="info-content">
                 <h5>Website</h5>
@@ -1067,7 +1067,7 @@ include 'include/header.php';
 
             <div class="info-item" data-aos="zoom-in" data-aos-delay="400">
               <div class="info-icon">
-                <i class="bi bi-clock-fill"></i>
+                <span class="ui-icon ui-icon-clock-fill" aria-hidden="true"></span>
               </div>
               <div class="info-content">
                 <h5>Response Time</h5>
@@ -1080,9 +1080,8 @@ include 'include/header.php';
           <div class="social-contact" data-aos="fade-up" data-aos-delay="450">
             <h5>Follow Us</h5>
             <div class="social-icons">
-              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="social-icon" aria-label="Facebook"><span class="ui-icon ui-icon-facebook" aria-hidden="true"></span></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><span class="ui-icon ui-icon-instagram" aria-hidden="true"></span></a>
             </div>
             <p style="margin-top:10px; font-size:13px; opacity:0.7;">
               @bitreemw
@@ -1139,7 +1138,7 @@ include 'include/header.php';
 
             <button type="submit" class="submit-btn">
               <span>Send Request</span>
-              <i class="bi bi-arrow-right"></i>
+              <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
             </button>
 
           </form>

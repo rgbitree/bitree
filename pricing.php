@@ -55,7 +55,7 @@
               <!-- CARD -->
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-bar-chart-line"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-bar-chart-line" aria-hidden="true"></span></div>
                   <div>
                     <h5>Starter Insights Package</h5>
                     <span class="price">MWK 450,000 – 750,000</span>
@@ -63,10 +63,10 @@
                 </div>
                 <p class="pricing-desc">For businesses starting to understand their data.</p>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Data audit & cleaning</li>
-                  <li><i class="bi bi-check-circle"></i> Simple analysis</li>
-                  <li><i class="bi bi-check-circle"></i> 1 dashboard</li>
-                  <li><i class="bi bi-check-circle"></i> Insight report</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Data audit & cleaning</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Simple analysis</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> 1 dashboard</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Insight report</li>
                 </ul>
                 <div class="pricing-footer">
                   <span class="outcome">Understand what’s happening in your business</span>
@@ -76,17 +76,17 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-graph-up"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-graph-up" aria-hidden="true"></span></div>
                   <div>
                     <h5>Business Intelligence Package</h5>
                     <span class="price">MWK 900,000 – 1,800,000</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Data structuring</li>
-                  <li><i class="bi bi-check-circle"></i> Advanced analysis</li>
-                  <li><i class="bi bi-check-circle"></i> 2–4 dashboards</li>
-                  <li><i class="bi bi-check-circle"></i> KPI tracking</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Data structuring</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Advanced analysis</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> 2–4 dashboards</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> KPI tracking</li>
                 </ul>
                 <div class="pricing-footer">
                   <span class="outcome">Track performance and make informed decisions</span>
@@ -96,17 +96,17 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-database"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-database" aria-hidden="true"></span></div>
                   <div>
                     <h5>Advanced Data Systems</h5>
                     <span class="price">MWK 2,500,000 – 5,500,000+</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Full database design</li>
-                  <li><i class="bi bi-check-circle"></i> Data pipelines</li>
-                  <li><i class="bi bi-check-circle"></i> Forecasting</li>
-                  <li><i class="bi bi-check-circle"></i> System integration</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Full database design</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Data pipelines</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Forecasting</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> System integration</li>
                 </ul>
                 <div class="pricing-footer">
                   <span class="outcome">Become a fully data-driven organization</span>
@@ -128,16 +128,16 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-cpu"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-cpu" aria-hidden="true"></span></div>
                   <div>
                     <h5>Basic System</h5>
                     <span class="price">MWK 1,200,000 – 2,500,000</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Simple system</li>
-                  <li><i class="bi bi-check-circle"></i> Core features</li>
-                  <li><i class="bi bi-check-circle"></i> Basic database</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Simple system</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Core features</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Basic database</li>
                 </ul>
                 <div class="pricing-footer">
                   <a href="/#contact" class="btn-pricing">Get a Quote</a>
@@ -146,16 +146,16 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-diagram-3"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span></div>
                   <div>
                     <h5>Business System Package</h5>
                     <span class="price">MWK 3,000,000 – 7,000,000</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Tailored system</li>
-                  <li><i class="bi bi-check-circle"></i> Role-based access</li>
-                  <li><i class="bi bi-check-circle"></i> Dashboards</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Tailored system</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Role-based access</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Dashboards</li>
                 </ul>
                 <div class="pricing-footer">
                   <a href="/#contact" class="btn-pricing">Get a Quote</a>
@@ -164,16 +164,16 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-gear"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-gear" aria-hidden="true"></span></div>
                   <div>
                     <h5>Enterprise Systems</h5>
                     <span class="price">MWK 8,000,000 – 20,000,000+</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Scalable systems</li>
-                  <li><i class="bi bi-check-circle"></i> Automation workflows</li>
-                  <li><i class="bi bi-check-circle"></i> Analytics integration</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Scalable systems</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Automation workflows</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Analytics integration</li>
                 </ul>
                 <div class="pricing-footer">
                   <a href="/#contact" class="btn-pricing">Get a Quote</a>
@@ -194,15 +194,15 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-window"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-window" aria-hidden="true"></span></div>
                   <div>
                     <h5>Basic Website</h5>
                     <span class="price">MWK 350,000 – 700,000</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> 3–5 pages</li>
-                  <li><i class="bi bi-check-circle"></i> Mobile responsive</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> 3–5 pages</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Mobile responsive</li>
                 </ul>
                 <div class="pricing-footer">
                   <a href="/#contact" class="btn-pricing">Get a Quote</a>
@@ -211,16 +211,16 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-globe"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-globe" aria-hidden="true"></span></div>
                   <div>
                     <h5>Business Website</h5>
                     <span class="price">MWK 800,000 – 1,800,000</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> 5–10 pages</li>
-                  <li><i class="bi bi-check-circle"></i> CMS</li>
-                  <li><i class="bi bi-check-circle"></i> SEO basics</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> 5–10 pages</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> CMS</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> SEO basics</li>
                 </ul>
                 <div class="pricing-footer">
                   <a href="/#contact" class="btn-pricing">Get a Quote</a>
@@ -229,16 +229,16 @@
 
               <div class="pricing-card">
                 <div class="pricing-header">
-                  <div class="pricing-icon"><i class="bi bi-code-slash"></i></div>
+                  <div class="pricing-icon"><span class="ui-icon ui-icon-code-slash" aria-hidden="true"></span></div>
                   <div>
                     <h5>Web Platform</h5>
                     <span class="price">MWK 2,500,000 – 6,000,000</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
-                  <li><i class="bi bi-check-circle"></i> Login systems</li>
-                  <li><i class="bi bi-check-circle"></i> Dashboards</li>
-                  <li><i class="bi bi-check-circle"></i> Data integration</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Login systems</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Dashboards</li>
+                  <li><span class="ui-icon ui-icon-check-circle" aria-hidden="true"></span> Data integration</li>
                 </ul>
                 <div class="pricing-footer">
                   <a href="/#contact" class="btn-pricing">Get a Quote</a>
@@ -279,11 +279,11 @@
 
                 <div class="contact-info">
                   <div class="contact-item">
-                    <i class="bi bi-telephone"></i>
+                    <span class="ui-icon ui-icon-telephone" aria-hidden="true"></span>
                     <span>+265 881 536 054</span>
                   </div>
                   <div class="contact-item">
-                    <i class="bi bi-envelope"></i>
+                    <span class="ui-icon ui-icon-envelope" aria-hidden="true"></span>
                     <span>bitreemw@gmail.com</span>
                   </div>
                 </div>
