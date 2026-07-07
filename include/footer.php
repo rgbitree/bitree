@@ -23,6 +23,7 @@
   <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="/assets/vendor/typed.js/typed.umd.js"></script>
   <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/js/icons.js"></script>
   <script src="/assets/js/contact-form.js"></script>
 
   <!-- Main JS File -->

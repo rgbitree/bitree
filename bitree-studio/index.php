@@ -1173,6 +1173,7 @@
   </footer>
 
   <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/js/icons.js"></script>
   <script>
     const toggleStudioHeader = () => {
       document.body.classList.toggle("studio-scrolled", window.scrollY > 12);

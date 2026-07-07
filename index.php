@@ -315,7 +315,7 @@ include 'include/header.php';
           <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
 
             <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-1">
+              <a class="nav-link active show" href="#features-tabs-tab-1" data-tab-target="#features-tabs-tab-1" role="tab" aria-selected="true">
                 <div class="tab-icon">
                   <span class="ui-icon ui-icon-rocket-takeoff" aria-hidden="true"></span>
                 </div>
@@ -327,7 +327,7 @@ include 'include/header.php';
             </li><!-- End tab nav item -->
 
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-2">
+              <a class="nav-link" href="#features-tabs-tab-2" data-tab-target="#features-tabs-tab-2" role="tab" aria-selected="false">
                 <div class="tab-icon">
                   <span class="ui-icon ui-icon-shield-shaded" aria-hidden="true"></span>
                 </div>
@@ -339,7 +339,7 @@ include 'include/header.php';
             </li><!-- End tab nav item -->
 
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-3">
+              <a class="nav-link" href="#features-tabs-tab-3" data-tab-target="#features-tabs-tab-3" role="tab" aria-selected="false">
                 <div class="tab-icon">
                   <span class="ui-icon ui-icon-lightning-charge" aria-hidden="true"></span>
                 </div>
@@ -351,7 +351,7 @@ include 'include/header.php';
             </li><!-- End tab nav item -->
 
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tabs-tab-4">
+              <a class="nav-link" href="#features-tabs-tab-4" data-tab-target="#features-tabs-tab-4" role="tab" aria-selected="false">
                 <div class="tab-icon">
                   <span class="ui-icon ui-icon-heart-pulse" aria-hidden="true"></span>
                 </div>

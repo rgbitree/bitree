@@ -304,10 +304,38 @@ body {
   justify-content: center;
   width: 1em;
   height: 1em;
+  min-width: 1em;
+  aspect-ratio: 1 / 1;
   flex: 0 0 auto;
   font-style: normal;
   line-height: 1;
   vertical-align: -0.125em;
+  overflow: visible;
+}
+
+.ui-icon[data-rendered="svg"]::before,
+.ui-icon[data-rendered="svg"]::after {
+  display: none;
+}
+
+.ui-icon[data-rendered="svg"].ui-icon-instagram {
+  border: 0;
+  border-radius: 0;
+  position: static;
+}
+
+.ui-icon svg {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  overflow: visible;
 }
 
 .ui-icon::before {
@@ -2150,7 +2178,12 @@ section,
 }
 
 .features-tabs .tab-content .tab-pane {
+  display: none;
   padding: 40px 0;
+}
+
+.features-tabs .tab-content .tab-pane.active.show {
+  display: block;
 }
 
 @media (max-width: 768px) {

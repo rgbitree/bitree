@@ -22,6 +22,12 @@
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('is-open');
+    const toggleIcon = mobileNavToggleBtn.querySelector('.ui-icon');
+    if (toggleIcon) {
+      toggleIcon.classList.toggle('ui-icon-list', !mobileNavToggleBtn.classList.contains('is-open'));
+      toggleIcon.classList.toggle('ui-icon-x', mobileNavToggleBtn.classList.contains('is-open'));
+      if (window.BitreeIcons) window.BitreeIcons.render(toggleIcon);
+    }
     mobileNavToggleBtn.setAttribute(
       'aria-label',
       mobileNavToggleBtn.classList.contains('is-open') ? 'Close menu' : 'Open menu'
@@ -135,6 +141,46 @@
   }
 
   window.addEventListener("load", initSwiper);
+
+  /**
+   * Local tab controller for feature tabs
+   */
+  function initFeatureTabs() {
+    document.querySelectorAll('.features-tabs .tabs-wrapper').forEach((tabsWrapper) => {
+      const tabLinks = Array.from(tabsWrapper.querySelectorAll('.nav-link[data-tab-target]'));
+      const tabPanes = Array.from(tabsWrapper.querySelectorAll('.tab-content > .tab-pane'));
+
+      function activateTab(tabLink) {
+        const targetSelector = tabLink.getAttribute('data-tab-target');
+        const targetPane = targetSelector ? tabsWrapper.querySelector(targetSelector) : null;
+        if (!targetPane) return;
+
+        tabLinks.forEach((link) => {
+          const isActive = link === tabLink;
+          link.classList.toggle('active', isActive);
+          link.classList.toggle('show', isActive);
+          link.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        tabPanes.forEach((pane) => {
+          const isActive = pane === targetPane;
+          pane.classList.toggle('active', isActive);
+          pane.classList.toggle('show', isActive);
+        });
+      }
+
+      tabLinks.forEach((tabLink) => {
+        tabLink.addEventListener('click', (event) => {
+          event.preventDefault();
+          activateTab(tabLink);
+        });
+      });
+
+      activateTab(tabLinks.find((link) => link.classList.contains('active')) || tabLinks[0]);
+    });
+  }
+
+  window.addEventListener('load', initFeatureTabs);
 
   /**
    * Frequently Asked Questions Toggle
