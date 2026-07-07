@@ -34,7 +34,7 @@ include 'include/header.php';
             <span>Explore Our Solutions</span>
             <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
           </a>
-          <a href="#contact" class="action-btn secondary glightbox">
+          <a href="#contact-popup" class="action-btn secondary contact-popup-trigger" aria-controls="contact-popup" aria-haspopup="dialog">
             <span class="ui-icon ui-icon-play-circle" aria-hidden="true"></span>
             <span>Start a Project</span>
           </a>
@@ -270,7 +270,7 @@ include 'include/header.php';
         <div class="feature-number">05</div>
         <div class="feature-content">
           <div class="feature-icon">
-            <span class="ui-icon ui-icon-gear" aria-hidden="true"></span>
+            <span class="ui-icon ui-icon-sliders" aria-hidden="true"></span>
           </div>
           <h4>Process Optimization</h4>
           <p>
@@ -809,7 +809,7 @@ include 'include/header.php';
         </div>
 
         <div class="cta-buttons d-flex flex-wrap gap-3">
-          <a href="#contact" class="btn btn-primary">Start a Project</a>
+          <a href="#contact-popup" class="btn btn-primary contact-popup-trigger" aria-controls="contact-popup" aria-haspopup="dialog">Start a Project</a>
           <a href="#services" class="btn btn-outline">View Services</a>
         </div>
       </div>
@@ -1151,6 +1151,80 @@ include 'include/header.php';
 
 </section>
 <!-- /Contact Section -->
+
+<div id="contact-popup" class="contact-popup" role="dialog" aria-modal="true" aria-labelledby="contactPopupTitle" aria-hidden="true">
+  <div class="contact-popup-backdrop" data-contact-popup-close></div>
+  <div class="contact-popup-panel" role="document">
+    <button class="contact-popup-close" type="button" aria-label="Close contact form" data-contact-popup-close>
+      <span class="ui-icon ui-icon-x" aria-hidden="true"></span>
+    </button>
+
+    <div class="contact-popup-grid">
+      <div class="contact-popup-info">
+        <span class="contact-popup-eyebrow">Start a project</span>
+        <h3 id="contactPopupTitle">Tell us what you want to build.</h3>
+        <p>Share the essentials and we will respond within 24 hours with a clear next step.</p>
+
+        <div class="contact-popup-details">
+          <div>
+            <span class="ui-icon ui-icon-envelope-fill" aria-hidden="true"></span>
+            <span>bitreemw@gmail.com</span>
+          </div>
+          <div>
+            <span class="ui-icon ui-icon-telephone-fill" aria-hidden="true"></span>
+            <span>+265 881 536 054</span>
+          </div>
+          <div>
+            <span class="ui-icon ui-icon-clock-fill" aria-hidden="true"></span>
+            <span>Response within 24 hours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-popup-form">
+        <form action="/contact/" method="post" class="php-email-form" data-recaptcha-site-key="<?= htmlspecialchars((string) $recaptchaSiteKey, ENT_QUOTES, 'UTF-8'); ?>">
+          <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8'); ?>">
+          <input type="hidden" name="recaptcha_token" value="">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
+
+          <div class="loading">Sending message...</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Message sent successfully.</div>
+
+          <div class="mb-3">
+            <label for="popupContactName" class="form-label">Full Name</label>
+            <input type="text" name="name" class="form-control" id="popupContactName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="popupContactEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="email" id="popupContactEmail" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="popupContactPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" name="phone" id="popupContactPhone" placeholder="Enter your phone number">
+          </div>
+
+          <div class="mb-3">
+            <label for="popupContactSubject" class="form-label">Subject</label>
+            <input type="text" class="form-control" name="subject" id="popupContactSubject" placeholder="Project / Service Inquiry" required>
+          </div>
+
+          <div class="mb-4">
+            <label for="popupContactMessage" class="form-label">Your Message</label>
+            <textarea class="form-control message-textarea" name="message" id="popupContactMessage" rows="5" placeholder="Briefly describe what you need..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Send Request</span>
+            <span class="ui-icon ui-icon-arrow-right" aria-hidden="true"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
   </main>
 

@@ -882,6 +882,10 @@
     }
 
     @media (max-width: 575px) {
+      body {
+        overflow-x: hidden;
+      }
+
       .studio-hero {
         min-height: auto;
         padding-top: 116px;
@@ -898,6 +902,18 @@
 
       .studio-actions .studio-btn {
         width: 100%;
+      }
+
+      .studio-service,
+      .studio-package,
+      .studio-cta-panel,
+      .data-systems-card {
+        border-radius: 14px;
+      }
+
+      .studio-footer .container {
+        text-align: center;
+        align-items: center;
       }
 
       .data-systems-action {

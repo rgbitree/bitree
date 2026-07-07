@@ -143,6 +143,56 @@
   window.addEventListener("load", initSwiper);
 
   /**
+   * Contact popup
+   */
+  function initContactPopup() {
+    const popup = document.querySelector('#contact-popup');
+    if (!popup) return;
+
+    const triggers = document.querySelectorAll('.contact-popup-trigger, a[href="#contact-popup"]');
+    const closeControls = popup.querySelectorAll('[data-contact-popup-close]');
+    const firstField = popup.querySelector('input:not([type="hidden"]):not([tabindex="-1"]), textarea, button');
+    let previousFocus = null;
+
+    function openPopup(event) {
+      if (event) event.preventDefault();
+      previousFocus = document.activeElement;
+      popup.classList.add('is-open');
+      popup.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('contact-popup-open');
+      if (window.BitreeIcons) window.BitreeIcons.renderAll(popup);
+      setTimeout(() => {
+        if (firstField) firstField.focus();
+      }, 50);
+    }
+
+    function closePopup() {
+      popup.classList.remove('is-open');
+      popup.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('contact-popup-open');
+      if (previousFocus && typeof previousFocus.focus === 'function') {
+        previousFocus.focus();
+      }
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', openPopup);
+    });
+
+    closeControls.forEach((control) => {
+      control.addEventListener('click', closePopup);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && popup.classList.contains('is-open')) {
+        closePopup();
+      }
+    });
+  }
+
+  window.addEventListener('load', initContactPopup);
+
+  /**
    * Local tab controller for feature tabs
    */
   function initFeatureTabs() {
