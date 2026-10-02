@@ -1,6 +1,6 @@
 <?php include 'include/header.php'; ?>
 
-<main class="main">
+<main class="main" id="main">
 
   <!-- Page Title -->
   <div class="page-title light-background">
@@ -26,7 +26,7 @@
 
           <!-- HERO -->
           <div class="service-hero">
-            <img src="assets/img/services/pricing.jpg" class="img-fluid">
+            <img src="/assets/img/services/pricing.jpg" class="img-fluid" alt="Planning data and systems projects">
             <div class="service-badge">
               <span>Flexible Packages</span>
             </div>
@@ -44,10 +44,10 @@
             <!-- DATA & ANALYTICS -->
             <div class="service-features">
             <div class="section-intro-card">                
-              <h4>Data & Analytics Packages</h4>
-            <img src="assets/img/services/data.jpg" alt="">
+              <h2>Data & Analytics Packages</h2>
+            <img src="/assets/img/services/data.jpg" alt="">
             <div class="intro-overlay">
-                <h5>Turn Raw Data Into Strategic Decisions</h5>
+                <h3>Turn Raw Data Into Strategic Decisions</h3>
                 <p>We help businesses unlock insights, track performance, and build intelligent systems powered by data.</p>
             </div>
             </div>
@@ -57,7 +57,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-bar-chart-line" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Starter Insights Package</h5>
+                    <h3>Starter Insights Package</h3>
                     <span class="price">MWK 450,000 – 750,000</span>
                   </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-graph-up" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Business Intelligence Package</h5>
+                    <h3>Business Intelligence Package</h3>
                     <span class="price">MWK 900,000 – 1,800,000</span>
                   </div>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-database" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Advanced Data Systems</h5>
+                    <h3>Advanced Data Systems</h3>
                     <span class="price">MWK 2,500,000 – 5,500,000+</span>
                   </div>
                 </div>
@@ -118,10 +118,10 @@
             <!-- SYSTEM DEVELOPMENT -->
             <div class="service-features mt-5">
               <div class="section-intro-card">
-                <h4>System Development Packages</h4>
-                <img src="assets/img/services/system.jpg" alt="">
+                <h2>System Development Packages</h2>
+                <img src="/assets/img/services/system.jpg" alt="">
                 <div class="intro-overlay">
-                    <h5>Build Systems That Scale With You</h5>
+                    <h3>Build Systems That Scale With You</h3>
                     <p>Custom-built solutions designed to streamline operations and support growth.</p>
                 </div>
                 </div>
@@ -130,7 +130,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-cpu" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Basic System</h5>
+                    <h3>Basic System</h3>
                     <span class="price">MWK 1,200,000 – 2,500,000</span>
                   </div>
                 </div>
@@ -148,7 +148,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Business System Package</h5>
+                    <h3>Business System Package</h3>
                     <span class="price">MWK 3,000,000 – 7,000,000</span>
                   </div>
                 </div>
@@ -166,7 +166,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-gear" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Enterprise Systems</h5>
+                    <h3>Enterprise Systems</h3>
                     <span class="price">MWK 8,000,000 – 20,000,000+</span>
                   </div>
                 </div>
@@ -184,10 +184,10 @@
             <!-- WEB -->
             <div class="service-features mt-5">
               <div class="section-intro-card">
-                <h4>Web Platforms & Websites</h4>
-                <img src="assets/img/services/web.jpg" alt="">
+                <h2>Web Platforms & Websites</h2>
+                <img src="/assets/img/services/web.jpg" alt="">
                 <div class="intro-overlay">
-                    <h5>Modern Web Experiences</h5>
+                    <h3>Modern Web Experiences</h3>
                     <p>From websites to platforms, we design digital experiences that convert and perform.</p>
                 </div>
             </div>
@@ -196,7 +196,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-window" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Basic Website</h5>
+                    <h3>Basic Website</h3>
                     <span class="price">MWK 350,000 – 700,000</span>
                   </div>
                 </div>
@@ -213,7 +213,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-globe" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Business Website</h5>
+                    <h3>Business Website</h3>
                     <span class="price">MWK 800,000 – 1,800,000</span>
                   </div>
                 </div>
@@ -231,7 +231,7 @@
                 <div class="pricing-header">
                   <div class="pricing-icon"><span class="ui-icon ui-icon-code-slash" aria-hidden="true"></span></div>
                   <div>
-                    <h5>Web Platform</h5>
+                    <h3>Web Platform</h3>
                     <span class="price">MWK 2,500,000 – 6,000,000</span>
                   </div>
                 </div>
@@ -254,7 +254,7 @@
           <div class="service-sidebar">
 
             <div class="service-menu">
-              <h4>Why Bitree?</h4>
+              <h2>Why Bitree?</h2>
               <div class="menu-list">
                 <div class="menu-item"><span>Data-first solutions</span></div>
                 <div class="menu-item"><span>Analytics + Systems expertise</span></div>
@@ -264,7 +264,7 @@
             </div>
 
             <div class="service-info">
-              <h4>Project Insights</h4>
+              <h2>Project Insights</h2>
               <div class="info-list">
                 <div class="info-item"><span class="info-label">Delivery:</span><span class="info-value">Project-based</span></div>
                 <div class="info-item"><span class="info-label">Customization:</span><span class="info-value">Fully tailored</span></div>
@@ -274,13 +274,13 @@
 
             <div class="contact-card">
               <div class="contact-content">
-                <h4>Need a Custom Quote?</h4>
+                <h2>Need a Custom Quote?</h2>
                 <p>Every business is different. Let’s design a solution that fits your exact needs.</p>
 
                 <div class="contact-info">
                   <div class="contact-item">
                     <span class="ui-icon ui-icon-telephone" aria-hidden="true"></span>
-                    <span>+265 881 536 054</span>
+                    <span>+265 991 538 162</span>
                   </div>
                   <div class="contact-item">
                     <span class="ui-icon ui-icon-envelope" aria-hidden="true"></span>

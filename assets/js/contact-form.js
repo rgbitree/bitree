@@ -28,15 +28,25 @@
           recaptchaInput.value = await window.grecaptcha.execute(siteKey, { action: "contact" });
         }
 
+        const data = new FormData(form);
+        if (data.has("service_focus")) {
+          data.set("subject", "Bitree Studio: " + data.get("service_focus"));
+          data.set("message", data.get("message") + "\n\nTarget timeline: " + (form.querySelector("[name='timeline'] option:checked")?.textContent || "Not specified"));
+        }
         const response = await fetch(form.action, {
           method: form.method || "POST",
-          body: new FormData(form),
+          body: data,
           headers: {
             "X-Requested-With": "XMLHttpRequest"
           }
         });
 
-        const result = await response.json();
+        let result;
+        try {
+          result = await response.json();
+        } catch {
+          throw new Error("We couldn't send your inquiry. Please try again or email bitreemw@gmail.com.");
+        }
 
         if (!response.ok || !result.success) {
           throw new Error(result.message || "Message could not be sent.");

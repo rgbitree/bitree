@@ -1,0 +1,12 @@
+const fs = require('node:fs');
+const home = fs.readFileSync('index.php', 'utf8');
+let header = home.slice(home.indexOf('<!DOCTYPE'), home.indexOf('<main'));
+header = header.replace('data-site', 'data-site pricing-page').replace(/href="#(?!main)([^"]+)"/g, 'href="/#$1"').replace(/<title>.*?<\/title>/, '<title>Pricing & Packages | Bitree Data Systems</title>');
+fs.writeFileSync('include/header.php', header);
+let footer = home.slice(home.indexOf('<footer'));
+footer = footer.replace(/href="#([^"]+)"/g, 'href="/#$1"').replace(/<\?php if \(\$recaptchaSiteKey[\s\S]*?<\?php endif; \?>/, '');
+fs.writeFileSync('include/footer.php', footer);
+let pricing = fs.readFileSync('pricing.php', 'utf8').replace('<main class="main">', '<main class="main" id="main">').replaceAll('src="assets/', 'src="/assets/').replace('class="img-fluid">', 'class="img-fluid" alt="Planning data and systems projects">');
+pricing = pricing.replace(/<(\/?)h4>/g, '<$1h2>').replace(/<(\/?)h5>/g, '<$1h3>');
+fs.writeFileSync('pricing.php', pricing);
+fs.writeFileSync('.gitignore', '/vendor/\ninclude/.env\nnode_modules/\n.qa/\n');
