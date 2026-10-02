@@ -1,2 +1,4 @@
 /vendor/
 include/.env
+node_modules/
+.qa/

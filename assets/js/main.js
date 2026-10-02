@@ -21,8 +21,17 @@
 
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
+    mobileNavToggleBtn.classList.toggle('is-open');
+    const toggleIcon = mobileNavToggleBtn.querySelector('.ui-icon');
+    if (toggleIcon) {
+      toggleIcon.classList.toggle('ui-icon-list', !mobileNavToggleBtn.classList.contains('is-open'));
+      toggleIcon.classList.toggle('ui-icon-x', mobileNavToggleBtn.classList.contains('is-open'));
+      if (window.BitreeIcons) window.BitreeIcons.render(toggleIcon);
+    }
+    mobileNavToggleBtn.setAttribute(
+      'aria-label',
+      mobileNavToggleBtn.classList.contains('is-open') ? 'Close menu' : 'Open menu'
+    );
   }
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
@@ -132,6 +141,96 @@
   }
 
   window.addEventListener("load", initSwiper);
+
+  /**
+   * Contact popup
+   */
+  function initContactPopup() {
+    const popup = document.querySelector('#contact-popup');
+    if (!popup) return;
+
+    const triggers = document.querySelectorAll('.contact-popup-trigger, a[href="#contact-popup"]');
+    const closeControls = popup.querySelectorAll('[data-contact-popup-close]');
+    const firstField = popup.querySelector('input:not([type="hidden"]):not([tabindex="-1"]), textarea, button');
+    let previousFocus = null;
+
+    function openPopup(event) {
+      if (event) event.preventDefault();
+      previousFocus = document.activeElement;
+      popup.classList.add('is-open');
+      popup.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('contact-popup-open');
+      if (window.BitreeIcons) window.BitreeIcons.renderAll(popup);
+      setTimeout(() => {
+        if (firstField) firstField.focus();
+      }, 50);
+    }
+
+    function closePopup() {
+      popup.classList.remove('is-open');
+      popup.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('contact-popup-open');
+      if (previousFocus && typeof previousFocus.focus === 'function') {
+        previousFocus.focus();
+      }
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', openPopup);
+    });
+
+    closeControls.forEach((control) => {
+      control.addEventListener('click', closePopup);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && popup.classList.contains('is-open')) {
+        closePopup();
+      }
+    });
+  }
+
+  window.addEventListener('load', initContactPopup);
+
+  /**
+   * Local tab controller for feature tabs
+   */
+  function initFeatureTabs() {
+    document.querySelectorAll('.features-tabs .tabs-wrapper').forEach((tabsWrapper) => {
+      const tabLinks = Array.from(tabsWrapper.querySelectorAll('.nav-link[data-tab-target]'));
+      const tabPanes = Array.from(tabsWrapper.querySelectorAll('.tab-content > .tab-pane'));
+
+      function activateTab(tabLink) {
+        const targetSelector = tabLink.getAttribute('data-tab-target');
+        const targetPane = targetSelector ? tabsWrapper.querySelector(targetSelector) : null;
+        if (!targetPane) return;
+
+        tabLinks.forEach((link) => {
+          const isActive = link === tabLink;
+          link.classList.toggle('active', isActive);
+          link.classList.toggle('show', isActive);
+          link.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        tabPanes.forEach((pane) => {
+          const isActive = pane === targetPane;
+          pane.classList.toggle('active', isActive);
+          pane.classList.toggle('show', isActive);
+        });
+      }
+
+      tabLinks.forEach((tabLink) => {
+        tabLink.addEventListener('click', (event) => {
+          event.preventDefault();
+          activateTab(tabLink);
+        });
+      });
+
+      activateTab(tabLinks.find((link) => link.classList.contains('active')) || tabLinks[0]);
+    });
+  }
+
+  window.addEventListener('load', initFeatureTabs);
 
   /**
    * Frequently Asked Questions Toggle

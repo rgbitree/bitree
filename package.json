@@ -1,0 +1,27 @@
+{
+  "name": "bitree",
+  "version": "1.0.0",
+  "description": "Bitree Data Systems and Studio public websites",
+  "scripts": {
+    "build": "tailwindcss -c tailwind.data.config.cjs -i assets/css/tailwind.css -o assets/css/data.css --minify && tailwindcss -c tailwind.studio.config.cjs -i assets/css/tailwind.css -o assets/css/studio.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgbitree/bitree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rgbitree/bitree/issues"
+  },
+  "homepage": "https://github.com/rgbitree/bitree#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0",
+    "lighthouse": "^13.5.0",
+    "playwright": "^1.63.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "private": true
+}

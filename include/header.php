@@ -1,56 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Bitree</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="/assets/css/main.css" rel="stylesheet">
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
-             <img class="brand-logo" src="/assets/img/brand/bitree-data-systems-logo.png" alt="Bitree Data & Systems">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="/#hero" class="active">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#features">Features</a></li>
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#pricing">Pricing</a></li>
-          <li><a href="/studio/">Studio</a></li>
-          <li><a href="/#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="/#about">Get Started</a>
-
-    </div>
-  </header>
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Pricing & Packages | Bitree Data Systems</title>
+    <meta name="description" content="Bitree helps organizations structure data, streamline operations, and build systems for better decisions. Based in Malawi.">
+    <link rel="icon" href="/assets/img/favicon.png">
+    <link rel="preload" href="/assets/fonts/font-0-0.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/assets/fonts/font-1-0.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/data.css">
+    <link rel="stylesheet" href="/assets/css/site-refinements.css"></head><body class="bg-surface-canvas text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container data-site pricing-page"><a href="#main" class="skip-link">Skip to content</a><header class="fixed top-0 left-0 w-full z-50 bg-surface-panel/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="site-header-inner"><a href="/" aria-label="Bitree Data Systems home"><img class="brand-logo" src="/assets/img/brand/bitree-data-systems-logo.png" alt="Bitree Data Systems" width="165" height="42" decoding="async"></a><nav class="site-nav" id="site-navigation" aria-label="Main navigation"><a href="/">Home</a><a href="/#about">About</a><a href="/#capabilities">Capabilities</a><a href="/#services">Services</a><a href="/#pricing">Pricing</a><a href="/studio/">Studio ↗</a></nav><div class="site-header-actions"><a class="site-header-cta" href="/#contact">Start a Project ↗</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button></div></div></header>
