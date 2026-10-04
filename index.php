@@ -73,14 +73,14 @@
 <span class="w-3 h-3 rounded-full bg-surface-container-highest"></span>
 <span class="w-3 h-3 rounded-full bg-surface-container-highest"></span>
 </div>
-<span class="ml-space-sm font-code-telemetry text-code-telemetry text-text-tertiary">Architecture preview · Illustrative sample data</span>
+<span class="ml-space-sm font-code-telemetry text-code-telemetry text-text-tertiary">Business overview · Sample data</span>
 </div>
 <div class="flex items-center gap-space-md font-code-telemetry text-code-telemetry text-text-secondary">
 <span class="hidden sm:inline text-signal-emerald flex items-center gap-1">
-<span class="w-1.5 h-1.5 rounded-full bg-signal-emerald animate-pulse"></span> SYNC_READY
+<span class="w-1.5 h-1.5 rounded-full bg-signal-emerald animate-pulse"></span> UP TO DATE
               </span>
-<span>SCHEMA: V4.19</span>
-<span class="text-text-primary bg-surface-container-high px-2 py-0.5 rounded">MWK NODE</span>
+<span>TODAY</span>
+<span class="text-text-primary bg-surface-container-high px-2 py-0.5 rounded">MWK</span>
 </div>
 </div>
 <!-- Console Interior Grid -->
@@ -89,28 +89,28 @@
 <div class="md:col-span-4 flex flex-col gap-space-md">
 <div class="p-space-md rounded-lg bg-surface-panel shadow-sm">
 <div class="flex items-center justify-between">
-<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">Pipeline Throughput</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">Orders completed</span>
 <span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">trending_up</span>
 </div>
 <div class="mt-2 flex items-baseline gap-2">
-<span class="font-headline-lg text-headline-lg text-text-primary">14.8M</span>
-<span class="font-code-telemetry text-code-telemetry text-signal-emerald">+28.4%</span>
+<span class="font-headline-lg text-headline-lg text-text-primary">42</span>
+<span class="font-code-telemetry text-code-telemetry text-signal-emerald">of 50</span>
 </div>
-<span class="font-code-telemetry text-[11px] text-text-tertiary">Records processed / 24h</span>
+<span class="font-code-telemetry text-[11px] text-text-tertiary">42 orders done. 8 still to go.</span>
 <div class="mt-3 w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
 <div class="bg-signal-emerald h-1.5 rounded-full w-[84%]"></div>
 </div>
 </div>
 <div class="p-space-md rounded-lg bg-surface-panel shadow-sm">
 <div class="flex items-center justify-between">
-<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">ETL Latency Delta</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">Stock to reorder</span>
 <span class="material-symbols-outlined text-signal-cyan text-[18px]" aria-hidden="true">speed</span>
 </div>
 <div class="mt-2 flex items-baseline gap-2">
-<span class="font-headline-lg text-headline-lg text-text-primary">12.4ms</span>
-<span class="font-code-telemetry text-code-telemetry text-signal-cyan">Optimized</span>
+<span class="font-headline-lg text-headline-lg text-text-primary">6 items</span>
+<span class="font-code-telemetry text-code-telemetry text-signal-cyan">Running low</span>
 </div>
-<span class="font-code-telemetry text-[11px] text-text-tertiary">Normal threshold: &lt;45ms</span>
+<span class="font-code-telemetry text-[11px] text-text-tertiary">Know what to restock before it runs out.</span>
 <div class="mt-3 flex items-center gap-1">
 <div class="h-3 flex-1 rounded-sm bg-signal-emerald/80"></div>
 <div class="h-4 flex-1 rounded-sm bg-signal-emerald"></div>
@@ -125,13 +125,13 @@
 <!-- Stream Metric MWK -->
 <div class="p-space-md rounded-lg bg-surface-panel shadow-sm">
 <div class="flex items-center justify-between">
-<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">Ingested Volume (MWK)</span>
-<span class="font-code-telemetry text-code-telemetry text-signal-emerald">AUDITED</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">Sales today</span>
+<span class="font-code-telemetry text-code-telemetry text-signal-emerald">RECORDED</span>
 </div>
 <div class="mt-2">
-<span class="font-headline-md text-headline-md text-text-primary">MWK 11.82M</span>
+<span class="font-headline-md text-headline-md text-text-primary">MWK 185,000</span>
 </div>
-<span class="font-code-telemetry text-[11px] text-text-tertiary">Real-time settlement data feed</span>
+<span class="font-code-telemetry text-[11px] text-text-tertiary">See your total sales for today.</span>
 </div>
 </div>
 <!-- Right Telemetry Visual & Schema Map -->
@@ -139,43 +139,43 @@
 <div class="p-space-md rounded-lg bg-surface-panel shadow-sm flex-1 flex flex-col justify-between">
 <div class="flex flex-wrap items-center justify-between gap-2 pb-2">
 <div>
-<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">Distributed Nodes Status Map</span>
-<p class="font-headline-sm text-headline-sm text-text-primary">Active Multi-Branch Topology</p>
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">Your business, connected</span>
+<p class="font-headline-sm text-headline-sm text-text-primary">Sales, stock &amp; reports in one place</p>
 </div>
 <div class="flex items-center gap-2">
-<span class="px-2 py-0.5 rounded text-signal-emerald bg-surface-container-high font-code-telemetry text-code-telemetry">5 Nodes Online</span>
-<span class="px-2 py-0.5 rounded text-signal-cyan bg-surface-container-high font-code-telemetry text-code-telemetry">0 Errors</span>
+<span class="px-2 py-0.5 rounded text-signal-emerald bg-surface-container-high font-code-telemetry text-code-telemetry">Shared records</span>
+<span class="px-2 py-0.5 rounded text-signal-cyan bg-surface-container-high font-code-telemetry text-code-telemetry">Less retyping</span>
 </div>
 </div>
 <!-- Node Topology Schematic Diagram SVG -->
 <div class="my-3 p-4 rounded-lg bg-surface-container-lowest flex items-center justify-center">
-<svg class="w-full h-44 text-signal-emerald" fill="none" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+<svg role="img" aria-label="Sales connect to orders, stock, reports and your team" class="w-full h-44 text-signal-emerald" fill="none" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
 <!-- Conduits -->
 <path d="M70 80 H200 M200 80 L320 40 M200 80 L320 120 M320 40 H450 M320 120 H450 M450 40 L530 80 M450 120 L530 80" stroke="#1e293b" stroke-dasharray="4 4" stroke-width="2"></path>
 <path d="M70 80 H200 M200 80 L320 40 M320 40 H450 M450 40 L530 80" opacity="0.6" stroke="#00f090" stroke-width="2"></path>
 <!-- Source Node -->
 <rect fill="#0c111d" height="50" rx="6" stroke="none" width="80" x="20" y="55"></rect>
 <circle cx="60" cy="80" fill="#181b25" r="14"></circle>
-<text fill="#00f090" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="60" y="84">SRC</text>
+<text fill="#00f090" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="60" y="84">SALES</text>
 <!-- Aggregation Node -->
 <rect fill="#0c111d" height="50" rx="6" width="70" x="170" y="55"></rect>
 <circle cx="205" cy="80" fill="#00f090" fill-opacity="0.15" r="16"></circle>
 <circle cx="205" cy="80" fill="#00f090" r="8"></circle>
 <!-- Branch A: Cleanse -->
 <rect fill="#131b2e" height="50" rx="6" width="80" x="300" y="15"></rect>
-<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="340" y="38">CLEANSE</text>
-<text fill="#00f090" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="340" y="52">0.2ms</text>
+<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="340" y="38">ORDERS</text>
+<text fill="#00f090" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="340" y="52">Track</text>
 <!-- Branch B: Structuring -->
 <rect fill="#131b2e" height="50" rx="6" width="80" x="300" y="95"></rect>
-<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="340" y="118">TRANSFORM</text>
-<text fill="#38bdf8" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="340" y="132">1.1ms</text>
+<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="340" y="118">STOCK</text>
+<text fill="#38bdf8" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="340" y="132">Check</text>
 <!-- Branch C: OLAP Sync -->
 <rect fill="#131b2e" height="50" rx="6" width="80" x="430" y="15"></rect>
-<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="470" y="38">DW SYNC</text>
-<text fill="#00f090" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="470" y="52">LIVE</text>
+<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="470" y="38">REPORTS</text>
+<text fill="#00f090" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="470" y="52">Review</text>
 <rect fill="#131b2e" height="50" rx="6" width="80" x="430" y="95"></rect>
-<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="470" y="118">API GATE</text>
-<text fill="#f59e0b" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="470" y="132">READY</text>
+<text fill="#f8fafc" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="470" y="118">TEAM</text>
+<text fill="#f59e0b" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="470" y="132">Share</text>
 <!-- Master Terminal Node -->
 <circle cx="530" cy="80" fill="#00f090" fill-opacity="0.2" r="18"></circle>
 <circle cx="530" cy="80" fill="#00f090" r="9"></circle>
@@ -184,12 +184,12 @@
 <!-- Telemetry Log Terminal Output -->
 <div class="p-2.5 rounded bg-surface-container-lowest font-code-telemetry text-code-telemetry flex flex-col gap-1 text-text-tertiary">
 <div class="flex items-center justify-between text-[11px]">
-<span class="text-text-secondary">[08:42:01.002] &gt; Bitree ETL batch #9482 verified. Normalized schema 24 tables.</span>
-<span class="text-signal-emerald font-semibold">200 OK</span>
+<span class="text-text-secondary">Latest sale recorded and stock updated.</span>
+<span class="text-signal-emerald font-semibold">Saved</span>
 </div>
 <div class="flex items-center justify-between text-[11px]">
-<span class="text-text-secondary">[08:42:02.418] &gt; Pipeline sync with Lilongwe central gateway completed.</span>
-<span class="text-signal-cyan font-semibold">0.08ms</span>
+<span class="text-text-secondary">Today's sales report is ready to view.</span>
+<span class="text-signal-cyan font-semibold">Ready</span>
 </div>
 </div>
 </div>
