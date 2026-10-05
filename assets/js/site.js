@@ -18,4 +18,18 @@
     if (!event.target.closest('header')) closeMenu();
   });
   matchMedia('(min-width: 1200px)').addEventListener('change', closeMenu);
+  document.querySelectorAll('[data-project-preview]').forEach(preview => {
+    const image = preview.querySelector('img');
+    const buttons = preview.querySelectorAll('[data-preview-src]');
+    buttons.forEach(button => {
+      const preload = new Image();
+      preload.src = button.dataset.previewSrc;
+      button.addEventListener('click', () => {
+        image.src = button.dataset.previewSrc;
+        image.alt = `PartFlow Auto point-of-sale sample preview in ${button.dataset.previewTheme.toLowerCase()} mode, showing vehicle fitment search, branch stock, and a sales cart`;
+        buttons.forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+        preview.querySelector('[data-preview-label]').textContent = `${button.dataset.previewTheme} mode`;
+      });
+    });
+  });
 })();

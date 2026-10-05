@@ -7,7 +7,7 @@
     <link rel="preload" href="/assets/fonts/font-1-0.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="stylesheet" href="/assets/css/fonts.css">
     <link rel="stylesheet" href="/assets/css/data.css">
-    <link rel="stylesheet" href="/assets/css/site-refinements.css"></head><body class="bg-surface-canvas text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container data-site"><a href="#main" class="skip-link">Skip to content</a><header class="fixed top-0 left-0 w-full z-50 bg-surface-panel/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="site-header-inner"><a href="/" aria-label="Bitree Data Systems home"><img class="brand-logo" src="/assets/img/brand/bitree-data-systems-logo.png" alt="Bitree Data Systems" width="165" height="42" decoding="async"></a><nav class="site-nav" id="site-navigation" aria-label="Main navigation"><a href="/">Home</a><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="/studio/">Studio ↗</a></nav><div class="site-header-actions"><a class="site-header-cta" href="#contact">Start a Project ↗</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button></div></div></header><main class="w-full pt-20 bg-surface-canvas min-h-screen" id="main"><div class="flex flex-col w-full">
+    <link rel="stylesheet" href="/assets/css/site-refinements.css"></head><body class="bg-surface-canvas text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container data-site"><a href="#main" class="skip-link">Skip to content</a><header class="fixed top-0 left-0 w-full z-50 bg-surface-panel/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="site-header-inner"><a href="/" aria-label="Bitree Data Systems home"><img class="brand-logo" src="/assets/img/brand/bitree-data-systems-logo.png" alt="Bitree Data Systems" width="165" height="42" decoding="async"></a><nav class="site-nav" id="site-navigation" aria-label="Main navigation"><a href="/">Home</a><a href="/about/">About</a><a href="#services">Services</a><a href="/projects/">Projects</a><a href="#pricing">Pricing</a><a href="/studio/">Studio ↗</a></nav><div class="site-header-actions"><a class="site-header-cta" href="#contact">Start a Project ↗</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button></div></div></header><main class="w-full pt-20 bg-surface-canvas min-h-screen" id="main"><div class="flex flex-col w-full">
 <!-- Top Subtle Cybernetic Ambiance Grid Overlay -->
 <div class="relative w-full overflow-hidden">
 <div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px]"></div>
@@ -286,375 +286,13 @@
 </div>
 <!-- Quick Action Links -->
 <div class="flex items-center gap-space-md pt-space-xs">
-<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 bg-primary-container hover:bg-secondary text-on-primary-container font-label-mono-sm text-label-mono-sm uppercase rounded font-semibold transition-colors" href="#capabilities">
-<span>Learn More</span>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 bg-primary-container hover:bg-secondary text-on-primary-container font-label-mono-sm text-label-mono-sm uppercase rounded font-semibold transition-colors" href="/about/#capabilities">
+<span>More About Bitree</span>
 <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
 </a>
 <a class="inline-flex items-center gap-space-xs px-space-md py-2.5 bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-mono-sm text-label-mono-sm uppercase rounded transition-colors" href="#contact">
 <span>Contact Us</span>
 </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CAPABILITIES & VALUE MATRIX -->
-<section class="w-full py-space-3xl max-w-[1400px] mx-auto px-margin" id="capabilities">
-<div class="flex flex-col items-center text-center">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low text-signal-emerald font-label-mono-sm text-label-mono-sm uppercase tracking-wider">
-        Capabilities Architecture
-      </div>
-<h2 class="mt-space-sm font-headline-xl text-headline-xl text-text-primary tracking-tight max-w-3xl">
-        Designed for clarity, efficiency, and smarter decisions
-      </h2>
-<p class="mt-space-xs font-body-lg text-body-lg text-text-secondary max-w-2xl">
-        At Bitree, we focus on building systems and data environments that simplify complexity. Our approach ensures organizations gain visibility into operations and reduce systemic friction.
-      </p>
-<!-- Badges row -->
-<div class="mt-space-md flex flex-wrap items-center justify-center gap-space-sm">
-<span class="px-space-md py-1.5 rounded-lg bg-surface-panel shadow-sm font-label-mono-sm text-label-mono-sm text-signal-emerald flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-signal-emerald"></span> 100% Tailored Solutions
-        </span>
-<span class="px-space-md py-1.5 rounded-lg bg-surface-panel shadow-sm font-label-mono-sm text-label-mono-sm text-signal-cyan flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-signal-cyan"></span> Data-Driven Approach
-        </span>
-<span class="px-space-md py-1.5 rounded-lg bg-surface-panel shadow-sm font-label-mono-sm text-label-mono-sm text-text-primary flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span> Scalable Systems
-        </span>
-</div>
-</div>
-<!-- 6 Numbered Feature Cards (01 to 06) -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mt-space-2xl">
-<!-- 01 -->
-<div class="p-space-lg rounded-xl bg-surface-panel hover:bg-surface-elevated transition-all flex flex-col justify-between shadow-md group">
-<div>
-<div class="flex items-center justify-between">
-<span class="font-code-telemetry text-headline-md text-text-tertiary group-hover:text-signal-emerald transition-colors">01</span>
-<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-signal-emerald">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">schema</span>
-</div>
-</div>
-<h3 class="mt-space-md font-headline-md text-headline-md text-text-primary">Structured Data Environments</h3>
-<p class="mt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
-            We help organizations organize and centralize their data, transforming scattered information into structured systems that are easy to manage and use.
-          </p>
-</div>
-<div class="mt-space-lg flex items-center gap-2 pt-space-xs">
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-signal-emerald">Clarity</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-text-tertiary">Organization</span>
-</div>
-</div>
-<!-- 02 -->
-<div class="p-space-lg rounded-xl bg-surface-panel hover:bg-surface-elevated transition-all flex flex-col justify-between shadow-md group">
-<div>
-<div class="flex items-center justify-between">
-<span class="font-code-telemetry text-headline-md text-text-tertiary group-hover:text-signal-emerald transition-colors">02</span>
-<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-signal-cyan">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">integration_instructions</span>
-</div>
-</div>
-<h3 class="mt-space-md font-headline-md text-headline-md text-text-primary">Integrated Systems</h3>
-<p class="mt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
-            We design systems that connect different parts of your business, reducing duplication and creating a seamless flow of information across operations.
-          </p>
-</div>
-<div class="mt-space-lg flex items-center gap-2 pt-space-xs">
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-signal-cyan">Integration</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-text-tertiary">Efficiency</span>
-</div>
-</div>
-<!-- 03 -->
-<div class="p-space-lg rounded-xl bg-surface-panel hover:bg-surface-elevated transition-all flex flex-col justify-between shadow-md group">
-<div>
-<div class="flex items-center justify-between">
-<span class="font-code-telemetry text-headline-md text-text-tertiary group-hover:text-signal-emerald transition-colors">03</span>
-<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-primary-fixed">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">visibility</span>
-</div>
-</div>
-<h3 class="mt-space-md font-headline-md text-headline-md text-text-primary">Operational Visibility</h3>
-<p class="mt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
-            Gain a clear view of your business performance through structured data and reporting systems that highlight what matters most.
-          </p>
-</div>
-<div class="mt-space-lg flex items-center gap-2 pt-space-xs">
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-primary-fixed">Insights</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-text-tertiary">Transparency</span>
-</div>
-</div>
-<!-- 04 -->
-<div class="p-space-lg rounded-xl bg-surface-panel hover:bg-surface-elevated transition-all flex flex-col justify-between shadow-md group">
-<div>
-<div class="flex items-center justify-between">
-<span class="font-code-telemetry text-headline-md text-text-tertiary group-hover:text-signal-emerald transition-colors">04</span>
-<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-signal-amber">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">psychology</span>
-</div>
-</div>
-<h3 class="mt-space-md font-headline-md text-headline-md text-text-primary">Informed Decision-Making</h3>
-<p class="mt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
-            Replace guesswork with detached, data-backed insights, enabling leaders to make confident and strategic decisions with measurable outcomes.
-          </p>
-</div>
-<div class="mt-space-lg flex items-center gap-2 pt-space-xs">
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-signal-amber">Strategy</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-text-tertiary">Insights</span>
-</div>
-</div>
-<!-- 05 -->
-<div class="p-space-lg rounded-xl bg-surface-panel hover:bg-surface-elevated transition-all flex flex-col justify-between shadow-md group">
-<div>
-<div class="flex items-center justify-between">
-<span class="font-code-telemetry text-headline-md text-text-tertiary group-hover:text-signal-emerald transition-colors">05</span>
-<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-signal-emerald">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">alt_route</span>
-</div>
-</div>
-<h3 class="mt-space-md font-headline-md text-headline-md text-text-primary">Process Optimization</h3>
-<p class="mt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
-            We streamline workflows by reducing manual processes and improving how tasks and automated triggers are handled across your organization.
-          </p>
-</div>
-<div class="mt-space-lg flex items-center gap-2 pt-space-xs">
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-signal-emerald">Automation</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-text-tertiary">Productivity</span>
-</div>
-</div>
-<!-- 06 -->
-<div class="p-space-lg rounded-xl bg-surface-panel hover:bg-surface-elevated transition-all flex flex-col justify-between shadow-md group">
-<div>
-<div class="flex items-center justify-between">
-<span class="font-code-telemetry text-headline-md text-text-tertiary group-hover:text-signal-emerald transition-colors">06</span>
-<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-secondary-fixed">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">layers</span>
-</div>
-</div>
-<h3 class="mt-space-md font-headline-md text-headline-md text-text-primary">Scalable Foundations</h3>
-<p class="mt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
-            Our solutions are designed to grow with your business, ensuring long-term sustainability and adaptability as your database volume expands.
-          </p>
-</div>
-<div class="mt-space-lg flex items-center gap-2 pt-space-xs">
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-secondary-fixed">Scalable</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-low font-code-telemetry text-[11px] text-text-tertiary">Future-Ready</span>
-</div>
-</div>
-</div>
-<!-- Key Pillars Horizontal Banner -->
-<div class="mt-space-xl p-space-md rounded-xl bg-surface-container-low shadow-lg grid grid-cols-2 md:grid-cols-4 gap-space-md">
-<div class="flex items-center gap-space-sm">
-<span class="w-9 h-9 rounded bg-surface-elevated flex items-center justify-center text-signal-emerald">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">bolt</span>
-</span>
-<div>
-<h3 class="font-headline-sm text-body-md text-text-primary">Innovation</h3>
-<p class="font-body-sm text-[12px] text-text-secondary">Cutting-edge solutions</p>
-</div>
-</div>
-<div class="flex items-center gap-space-sm">
-<span class="w-9 h-9 rounded bg-surface-elevated flex items-center justify-center text-signal-cyan">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">lock</span>
-</span>
-<div>
-<h3 class="font-headline-sm text-body-md text-text-primary">Security</h3>
-<p class="font-body-sm text-[12px] text-text-secondary">Advanced protection</p>
-</div>
-</div>
-<div class="flex items-center gap-space-sm">
-<span class="w-9 h-9 rounded bg-surface-elevated flex items-center justify-center text-signal-amber">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">rocket_launch</span>
-</span>
-<div>
-<h3 class="font-headline-sm text-body-md text-text-primary">Performance</h3>
-<p class="font-body-sm text-[12px] text-text-secondary">Lightning fast speed</p>
-</div>
-</div>
-<div class="flex items-center gap-space-sm">
-<span class="w-9 h-9 rounded bg-surface-elevated flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined text-[20px]" aria-hidden="true">support_agent</span>
-</span>
-<div>
-<h3 class="font-headline-sm text-body-md text-text-primary">Support</h3>
-<p class="font-body-sm text-[12px] text-text-secondary">24/7 assistance</p>
-</div>
-</div>
-</div>
-</section>
-<!-- DATA TRANSFORMATION HIGHLIGHTS (4 In-Depth Transformation Blocks) -->
-<section class="w-full bg-surface-panel/30 py-space-3xl">
-<div class="max-w-[1400px] mx-auto px-margin flex flex-col gap-space-2xl">
-<!-- Highlight 1: Data-Driven Transformation -->
-<div class="p-space-xl rounded-xl bg-surface-panel shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-7 flex flex-col gap-space-sm">
-<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-signal-emerald">
-<span class="material-symbols-outlined text-[22px]" aria-hidden="true">rocket</span>
-</div>
-<h3 class="font-headline-lg text-headline-lg text-text-primary">Data-Driven Transformation</h3>
-<p class="font-body-md text-body-md text-text-secondary leading-relaxed max-w-xl">
-            We help organizations move from fragmented data and manual processes to structured, intelligent systems that support growth and continuous efficiency.
-          </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 mt-space-xs font-body-sm text-body-sm text-text-secondary">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">check_circle</span>
-<span>Organize &amp; centralize business data</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">check_circle</span>
-<span>Eliminate disconnected tools &amp; workflows</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">check_circle</span>
-<span>Improve visibility across operations</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">check_circle</span>
-<span>Enable smarter, data-backed decisions</span>
-</div>
-</div>
-<div class="flex items-center gap-space-md pt-space-md">
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-signal-emerald uppercase">Clarity</span>
-<span class="font-body-sm text-[12px] text-text-tertiary">In Data</span>
-</div>
-<span class="w-px h-6 bg-surface-container-high"></span>
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-signal-cyan uppercase">Efficiency</span>
-<span class="font-body-sm text-[12px] text-text-tertiary">In Processes</span>
-</div>
-<span class="w-px h-6 bg-surface-container-high"></span>
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-primary-fixed uppercase">Growth</span>
-<span class="font-body-sm text-[12px] text-text-tertiary">Through Insight</span>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5 insight-panel" aria-label="Business insights overview">
-  <p class="insight-panel-label">Business insights</p>
-  <p class="insight-panel-title">See what your data is telling you.</p>
-  <dl class="insight-list">
-    <div><dt>Performance trends</dt><dd>Understand how revenue, costs, and activity change over time.</dd></div>
-    <div><dt>Operational bottlenecks</dt><dd>Find delays and repeated work across your business processes.</dd></div>
-    <div><dt>Decision-ready reporting</dt><dd>Bring key findings together in clear, focused dashboards.</dd></div>
-  </dl>
-  <p class="insight-panel-note">Connected data. Clearer decisions.</p>
-</div>
-</div>
-<!-- Highlight 2: Reliable & Structured Systems -->
-<div class="p-space-xl rounded-xl bg-surface-panel shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-5 order-2 lg:order-1 insight-panel systems-panel" aria-label="Structured data workflow">
-  <p class="insight-panel-label">Reliable data foundations</p>
-  <p class="insight-panel-title">A clear path from records to insights.</p>
-  <ol class="system-flow">
-    <li><strong>Store</strong><span>PostgreSQL · MySQL · Firebase</span></li>
-    <li><strong>Structure &amp; validate</strong><span>Consistent records and defined relationships</span></li>
-    <li><strong>Connect &amp; report</strong><span>Dependable information for your team</span></li>
-  </ol>
-  <p class="insight-panel-note">Built for consistency, security, and long-term use.</p>
-</div>
-<div class="lg:col-span-7 order-1 lg:order-2 flex flex-col gap-space-sm">
-<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-signal-cyan">
-<span class="material-symbols-outlined text-[22px]" aria-hidden="true">verified_user</span>
-</div>
-<h3 class="font-headline-lg text-headline-lg text-text-primary">Reliable &amp; Structured Systems</h3>
-<p class="font-body-md text-body-md text-text-secondary leading-relaxed max-w-xl">
-            Our solutions are built with reliability and consistency in mind, ensuring your data and systems remain dependable as your organization scales up throughput.
-          </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 mt-space-xs font-body-sm text-body-sm text-text-secondary">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-cyan text-[18px]" aria-hidden="true">check_circle</span>
-<span>Consistent and well-structured data</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-cyan text-[18px]" aria-hidden="true">check_circle</span>
-<span>Secure handling of business records</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-cyan text-[18px]" aria-hidden="true">check_circle</span>
-<span>Systems designed for long-term use</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-cyan text-[18px]" aria-hidden="true">check_circle</span>
-<span>Reduced risk from manual processes</span>
-</div>
-</div>
-<div class="flex items-center gap-space-md pt-space-md">
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-signal-emerald uppercase">Reliable</span>
-<span class="font-body-sm text-[12px] text-text-tertiary">Systems</span>
-</div>
-<span class="w-px h-6 bg-surface-container-high"></span>
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-signal-cyan uppercase">Secure</span>
-<span class="font-body-sm text-[12px] text-text-tertiary">Data</span>
-</div>
-<span class="w-px h-6 bg-surface-container-high"></span>
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-signal-amber uppercase">Stable</span>
-<span class="font-body-sm text-[12px] text-text-tertiary">Operations</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Highlight 3 & 4 Mini Bento Pair -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<!-- Highlight 3: Efficient Operations -->
-<div class="p-space-lg rounded-xl bg-surface-panel shadow-md flex flex-col justify-between">
-<div>
-<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-signal-amber mb-space-sm">
-<span class="material-symbols-outlined text-[22px]" aria-hidden="true">tune</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-text-primary">Efficient Operations</h3>
-<p class="mt-2 font-body-sm text-body-sm text-text-secondary leading-relaxed">
-              We streamline workflows and reduce inefficiencies, helping organizations operate faster and more effectively without unnecessary operational complexity.
-            </p>
-<div class="mt-space-md flex flex-col gap-2 font-body-sm text-body-sm text-text-secondary">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-amber text-[16px]" aria-hidden="true">check</span>
-<span>Reduce manual and repetitive tasks</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-amber text-[16px]" aria-hidden="true">check</span>
-<span>Improve process efficiency across teams</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-amber text-[16px]" aria-hidden="true">check</span>
-<span>Streamline business workflows and automations</span>
-</div>
-</div>
-</div>
-<div class="mt-space-lg pt-space-xs flex items-center justify-between font-code-telemetry text-code-telemetry text-signal-amber">
-<span>Faster Processes // Optimized</span>
-<span class="material-symbols-outlined text-[18px]" aria-hidden="true">trending_up</span>
-</div>
-</div>
-<!-- Highlight 4: Collaborative Approach -->
-<div class="p-space-lg rounded-xl bg-surface-panel shadow-md flex flex-col justify-between">
-<div>
-<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-space-sm">
-<span class="material-symbols-outlined text-[22px]" aria-hidden="true">handshake</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-text-primary">Collaborative Approach</h3>
-<p class="mt-2 font-body-sm text-body-sm text-text-secondary leading-relaxed">
-              We work closely with organizations to understand their processes, ensuring every solution aligns with real business needs and delivers measurable value.
-            </p>
-<div class="mt-space-md flex flex-col gap-2 font-body-sm text-body-sm text-text-secondary">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[16px]" aria-hidden="true">check</span>
-<span>Client-focused solution architecture</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[16px]" aria-hidden="true">check</span>
-<span>Close technical collaboration throughout rollout</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[16px]" aria-hidden="true">check</span>
-<span>Continuous post-deployment improvement and support</span>
-</div>
-</div>
-</div>
-<div class="mt-space-lg pt-space-xs flex items-center justify-between font-code-telemetry text-code-telemetry text-secondary">
-<span>Partnership // Measurable Value</span>
-<span class="material-symbols-outlined text-[18px]" aria-hidden="true">verified</span>
 </div>
 </div>
 </div>
@@ -841,6 +479,30 @@
 </div>
 </div>
 </div>
+</div>
+</section>
+<!-- PROJECTS SECTION -->
+<section class="w-full py-space-3xl max-w-[1400px] mx-auto px-margin" id="projects" aria-labelledby="projects-title">
+<p class="font-label-mono-sm text-label-mono-sm text-signal-emerald uppercase tracking-wider">Projects</p>
+<h2 class="mt-space-xs font-headline-xl text-headline-xl text-text-primary" id="projects-title">Systems at work.</h2>
+<div class="home-projects-grid">
+<article class="project-overview" aria-labelledby="home-partflow-title">
+  <div class="project-overview-copy">
+    <div class="project-overview-category">Inventory &amp; point of sale</div>
+    <h3 id="home-partflow-title">PartFlow Auto</h3>
+    <p>Stock and sales management for auto-parts businesses. Find the right part, track stock across branches, and keep daily sales in one place.</p>
+    <p class="project-overview-customer">Currently serving <strong>CPT Car Parts</strong></p>
+    <a class="featured-project-link" href="/projects/">View projects <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+<article class="project-overview" aria-labelledby="home-serveflow-title">
+  <div class="project-overview-copy">
+    <div class="project-overview-category">Bar &amp; restaurant operations <span class="project-upcoming">Upcoming</span></div>
+    <h3 id="home-serveflow-title">ServeFlow</h3>
+    <p>A platform for managing bar and restaurant operations, bringing inventory, purchasing, orders, payments, and reporting together in one place.</p>
+    <p class="project-overview-customer">More details coming soon.</p>
+  </div>
+</article>
 </div>
 </section>
 <!-- PRICING SECTION -->
@@ -1122,4 +784,4 @@
 </div>
 </div>
 </section>
-</div></main><footer class="w-full bg-surface-panel shadow-[0_-1px_12px_rgba(0,0,0,0.5)] pt-space-3xl pb-space-xl"><div class="max-w-[1400px] mx-auto px-margin flex flex-col gap-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Bitree Data Systems" class="h-7 w-auto object-contain" src="/assets/img/brand/bitree-data-systems-logo.png" decoding="async" loading="lazy"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Bitree Data Systems</span></div><p class="font-body-sm text-body-sm text-text-secondary leading-relaxed pr-space-md">Data engineering, business intelligence, and custom systems that help organizations work with clarity.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="w-2 h-2 rounded-full bg-signal-emerald animate-pulse"></span><span class="font-code-telemetry text-code-telemetry text-signal-emerald tracking-wide uppercase">Data &amp; systems development · Malawi</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase tracking-wider">Platform</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="capabilities" href="#capabilities">Capabilities</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="services" href="#services">Services</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="studio" href="/studio/">Studio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="pricing" href="#pricing">Pricing</a></nav></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase tracking-wider">Company</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="about" href="#about">About Us</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="contact" href="#contact">Contact</a></nav></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase tracking-wider">Headquarters &amp; Contact</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-text-secondary"><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">call</span><span class="font-code-telemetry text-code-telemetry text-on-surface">+265 991 538 162</span></div><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">mail</span><span class="font-code-telemetry text-code-telemetry text-on-surface">bitreemw@gmail.com</span></div><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">location_on</span><span class="font-body-sm text-body-sm text-on-surface">Lilongwe, Malawi</span></div></div><div class="flex items-center gap-space-sm pt-space-xs"></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg bg-surface-panel"><span class="font-code-telemetry text-code-telemetry text-text-tertiary">© <?= date("Y"); ?> Bitree Data Systems. All rights reserved.</span><div class="flex items-center gap-space-md"></div></div></div></footer><script src="/assets/js/site.js" defer=""></script><script src="/assets/js/contact-form.js" defer=""></script><?php if ($recaptchaSiteKey !== ""): ?><script src="https://www.google.com/recaptcha/api.js?render=<?= urlencode((string) $recaptchaSiteKey); ?>" async defer></script><?php endif; ?></body></html>
+</div></main><footer class="w-full bg-surface-panel shadow-[0_-1px_12px_rgba(0,0,0,0.5)] pt-space-3xl pb-space-xl"><div class="max-w-[1400px] mx-auto px-margin flex flex-col gap-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Bitree Data Systems" class="h-7 w-auto object-contain" src="/assets/img/brand/bitree-data-systems-logo.png" decoding="async" loading="lazy"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Bitree Data Systems</span></div><p class="font-body-sm text-body-sm text-text-secondary leading-relaxed pr-space-md">Data engineering, business intelligence, and custom systems that help organizations work with clarity.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="w-2 h-2 rounded-full bg-signal-emerald animate-pulse"></span><span class="font-code-telemetry text-code-telemetry text-signal-emerald tracking-wide uppercase">Data &amp; systems development · Malawi</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase tracking-wider">Platform</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="capabilities" href="/about/#capabilities">Capabilities</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="services" href="#services">Services</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="projects" href="/projects/">Projects</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="studio" href="/studio/">Studio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="pricing" href="#pricing">Pricing</a></nav></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase tracking-wider">Company</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="about" href="/about/">About Us</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-signal-emerald transition-colors" data-path="contact" href="#contact">Contact</a></nav></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase tracking-wider">Headquarters &amp; Contact</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-text-secondary"><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">call</span><span class="font-code-telemetry text-code-telemetry text-on-surface">+265 991 538 162</span></div><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">mail</span><span class="font-code-telemetry text-code-telemetry text-on-surface">bitreemw@gmail.com</span></div><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">location_on</span><span class="font-body-sm text-body-sm text-on-surface">Malawi</span></div></div><div class="flex items-center gap-space-sm pt-space-xs"></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg bg-surface-panel"><span class="font-code-telemetry text-code-telemetry text-text-tertiary">© <?= date("Y"); ?> Bitree Data Systems. All rights reserved.</span><div class="flex items-center gap-space-md"></div></div></div></footer><script src="/assets/js/site.js" defer=""></script><script src="/assets/js/contact-form.js" defer=""></script><?php if ($recaptchaSiteKey !== ""): ?><script src="https://www.google.com/recaptcha/api.js?render=<?= urlencode((string) $recaptchaSiteKey); ?>" async defer></script><?php endif; ?></body></html>

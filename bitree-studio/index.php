@@ -508,7 +508,7 @@
 </div>
 <div class="flex flex-col">
 <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Headquartered</span>
-<span class="font-headline-sm text-[16px] text-on-surface font-bold">Lilongwe • Blantyre, Malawi (Available Worldwide)</span>
+<span class="font-headline-sm text-[16px] text-on-surface font-bold">Malawi (Available Worldwide)</span>
 </div>
 </div>
 </div>

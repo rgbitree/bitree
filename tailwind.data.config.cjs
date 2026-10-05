@@ -241,6 +241,10 @@ module.exports = {
   },
   "content": [
     "index.php",
+    "projects/**/*.php",
+    "about/**/*.php",
+    "include/header.php",
+    "include/footer.php",
     "assets/js/site.js"
   ]
 };
