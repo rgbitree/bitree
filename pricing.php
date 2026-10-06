@@ -9,7 +9,7 @@
       <nav class="breadcrumbs">
         <ol>
           <li><a href="/">Home</a></li>
-          <li class="current">Pricing</li>
+          <li class="current">Packages</li>
         </ol>
       </nav>
     </div>
@@ -58,7 +58,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-bar-chart-line" aria-hidden="true"></span></div>
                   <div>
                     <h3>Starter Insights Package</h3>
-                    <span class="price">From MWK 1,000,000</span>
                   </div>
                 </div>
                 <p class="pricing-desc">For businesses starting to understand their data.</p>
@@ -79,7 +78,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-graph-up" aria-hidden="true"></span></div>
                   <div>
                     <h3>Business Intelligence Package</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -99,7 +97,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-database" aria-hidden="true"></span></div>
                   <div>
                     <h3>Advanced Data Systems</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -131,7 +128,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-cpu" aria-hidden="true"></span></div>
                   <div>
                     <h3>Basic System</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -149,7 +145,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span></div>
                   <div>
                     <h3>Business System Package</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -167,7 +162,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-gear" aria-hidden="true"></span></div>
                   <div>
                     <h3>Enterprise Systems</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -197,7 +191,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-window" aria-hidden="true"></span></div>
                   <div>
                     <h3>Basic Website</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -214,7 +207,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-globe" aria-hidden="true"></span></div>
                   <div>
                     <h3>Business Website</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -232,7 +224,6 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-code-slash" aria-hidden="true"></span></div>
                   <div>
                     <h3>Web Platform</h3>
-                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -284,7 +275,7 @@
                   </div>
                   <div class="contact-item">
                     <span class="ui-icon ui-icon-envelope" aria-hidden="true"></span>
-                    <span>bitreemw@gmail.com</span>
+                    <span>contact@bitreemw.com</span>
                   </div>
                 </div>
 

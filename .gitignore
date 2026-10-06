@@ -2,3 +2,6 @@
 include/.env
 node_modules/
 .qa/
+
+# Debug logs (can contain SMTP credentials)
+*.log

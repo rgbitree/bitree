@@ -45,7 +45,7 @@
         try {
           result = await response.json();
         } catch {
-          throw new Error("We couldn't send your inquiry. Please try again or email bitreemw@gmail.com.");
+          throw new Error("We couldn't send your inquiry. Please try again or email contact@bitreemw.com.");
         }
 
         if (!response.ok || !result.success) {

@@ -18,7 +18,7 @@ function writeDebugLog($message)
     file_put_contents($logFile, "[$time] $message\n", FILE_APPEND);
 }
 
-function sendEmail($to, $subject, $message)
+function sendEmail($to, $subject, $message, $replyToEmail = null, $replyToName = '')
 {
     $mail = new PHPMailer(true);
 
@@ -46,7 +46,12 @@ function sendEmail($to, $subject, $message)
 
         $mail->setFrom((string) bitree_env('SMTP_USER'), 'Bitree');
         $mail->addAddress($to);
-        $mail->addReplyTo((string) bitree_env('SMTP_USER'), 'Bitree');
+        // Replies go to the visitor who filled in the form, when one is given
+        if ($replyToEmail) {
+            $mail->addReplyTo($replyToEmail, $replyToName);
+        } else {
+            $mail->addReplyTo((string) bitree_env('SMTP_USER'), 'Bitree');
+        }
 
         $mail->isHTML(false);
         $mail->Subject = $subject;

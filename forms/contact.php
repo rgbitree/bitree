@@ -200,7 +200,7 @@ $body .= "Subject: $subject\n\n";
 $body .= "Message:\n$message\n";
 
 /* ================= SEND EMAIL ================= */
-$send = sendEmail((string) bitree_env('SMTP_USER'), "Website Contact: $subject", $body);
+$send = sendEmail((string) bitree_env('SMTP_USER'), "Website Contact: $subject", $body, $email, html_entity_decode($name, ENT_QUOTES, 'UTF-8'));
 
 if ($send === true) {
     $response['success'] = true;
