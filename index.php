@@ -511,10 +511,10 @@
 <div class="flex flex-col items-center text-center">
 <span class="font-label-mono-sm text-label-mono-sm text-signal-emerald uppercase tracking-widest">// TIERED DEPLOYMENT</span>
 <h2 class="mt-space-xs font-headline-xl text-headline-xl text-text-primary tracking-tight">
-          Transparent Pricing Packages
+          Service Packages
         </h2>
 <p class="mt-space-xs font-body-lg text-body-lg text-text-secondary max-w-2xl">
-          Flexible data and analytics packages designed for businesses at different stages of growth.
+          Flexible data and analytics packages designed for businesses at different stages of growth. Every project is scoped to your needs, so contact us for a quote.
         </p>
 </div>
 <!-- Pricing Cards Grid -->
@@ -528,9 +528,9 @@
 <h3 class="mt-space-md font-headline-lg text-headline-lg text-text-primary">Starter Insights</h3>
 <p class="font-body-sm text-body-sm text-text-tertiary">For small businesses starting with data</p>
 <div class="my-space-lg">
-<span class="font-code-telemetry text-code-telemetry text-text-tertiary">PRICE BRACKET</span>
+<span class="font-code-telemetry text-code-telemetry text-text-tertiary">PRICING</span>
 <div class="font-headline-lg text-headline-lg text-text-primary">
-                MWK 450K – 750K
+                From MWK 1M
               </div>
 </div>
 <!-- Features Checklist -->
@@ -551,14 +551,10 @@
 <span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">check_circle</span>
 <span>1 performance dashboard</span>
 </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">check_circle</span>
-<span>Advanced analytics &amp; automation</span>
-</li>
 </ul>
 </div>
 <a class="mt-space-xl w-full py-3 rounded-lg bg-surface-container-high hover:bg-surface-elevated text-text-primary font-label-mono-sm text-label-mono-sm text-center uppercase tracking-wider transition-colors" href="#contact">
-            View Full Details
+            Get a Quote
           </a>
 </div>
 <!-- Tier 2: Business Intelligence (Recommended) -->
@@ -574,9 +570,9 @@
 <h3 class="mt-space-md font-headline-lg text-headline-lg text-text-primary">Business Intelligence</h3>
 <p class="font-body-sm text-body-sm text-signal-emerald">For growing businesses and teams</p>
 <div class="my-space-lg">
-<span class="font-code-telemetry text-code-telemetry text-text-tertiary">PRICE BRACKET</span>
+<span class="font-code-telemetry text-code-telemetry text-text-tertiary">PRICING</span>
 <div class="font-headline-lg text-headline-lg text-text-primary">
-                MWK 900K – 1.8M
+                Contact us for a quote
               </div>
 </div>
 <!-- Features Checklist -->
@@ -599,12 +595,12 @@
 </li>
 <li class="flex items-center gap-2">
 <span class="material-symbols-outlined text-signal-emerald text-[18px]" aria-hidden="true">verified</span>
-<span>Full system integration</span>
+<span>Integration with existing tools</span>
 </li>
 </ul>
 </div>
 <a class="mt-space-xl w-full py-3.5 rounded-lg bg-primary-container hover:bg-secondary text-on-primary-container font-label-mono-sm text-label-mono-sm font-bold text-center uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,240,144,0.3)]" href="#contact">
-            View Full Details
+            Get a Quote
           </a>
 </div>
 <!-- Tier 3: Advanced Data Systems -->
@@ -616,9 +612,9 @@
 <h3 class="mt-space-md font-headline-lg text-headline-lg text-text-primary">Advanced Data Systems</h3>
 <p class="font-body-sm text-body-sm text-text-tertiary">For organizations ready to scale</p>
 <div class="my-space-lg">
-<span class="font-code-telemetry text-code-telemetry text-text-tertiary">PRICE BRACKET</span>
+<span class="font-code-telemetry text-code-telemetry text-text-tertiary">PRICING</span>
 <div class="font-headline-lg text-headline-lg text-text-primary">
-                MWK 2.5M – 5.5M+
+                Contact us for a quote
               </div>
 </div>
 <!-- Features Checklist -->
@@ -646,7 +642,7 @@
 </ul>
 </div>
 <a class="mt-space-xl w-full py-3 rounded-lg bg-surface-container-high hover:bg-surface-elevated text-text-primary font-label-mono-sm text-label-mono-sm text-center uppercase tracking-wider transition-colors" href="#contact">
-            View Full Details
+            Get a Quote
           </a>
 </div>
 </div>

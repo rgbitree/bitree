@@ -5,7 +5,7 @@
   <!-- Page Title -->
   <div class="page-title light-background">
     <div class="container">
-      <h1>Pricing & Packages</h1>
+      <h1>Packages & Quotes</h1>
       <nav class="breadcrumbs">
         <ol>
           <li><a href="/">Home</a></li>
@@ -35,9 +35,9 @@
           <div class="service-content">
 
             <div class="service-header">
-              <h2>Flexible Pricing for Data & System Solutions</h2>
+              <h2>Flexible Packages for Data & System Solutions</h2>
               <p class="service-intro">
-                Our pricing is designed to match different stages of business growth—from small businesses getting started with data to organizations building fully integrated systems.
+                Our packages are designed to match different stages of business growth—from small businesses getting started with data to organizations building fully integrated systems. Every project is scoped to your needs, so contact us to get a quote.
               </p>
             </div>
 
@@ -58,7 +58,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-bar-chart-line" aria-hidden="true"></span></div>
                   <div>
                     <h3>Starter Insights Package</h3>
-                    <span class="price">MWK 450,000 – 750,000</span>
+                    <span class="price">From MWK 1,000,000</span>
                   </div>
                 </div>
                 <p class="pricing-desc">For businesses starting to understand their data.</p>
@@ -79,7 +79,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-graph-up" aria-hidden="true"></span></div>
                   <div>
                     <h3>Business Intelligence Package</h3>
-                    <span class="price">MWK 900,000 – 1,800,000</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -99,7 +99,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-database" aria-hidden="true"></span></div>
                   <div>
                     <h3>Advanced Data Systems</h3>
-                    <span class="price">MWK 2,500,000 – 5,500,000+</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -131,7 +131,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-cpu" aria-hidden="true"></span></div>
                   <div>
                     <h3>Basic System</h3>
-                    <span class="price">MWK 1,200,000 – 2,500,000</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -149,7 +149,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-diagram-3" aria-hidden="true"></span></div>
                   <div>
                     <h3>Business System Package</h3>
-                    <span class="price">MWK 3,000,000 – 7,000,000</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -167,7 +167,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-gear" aria-hidden="true"></span></div>
                   <div>
                     <h3>Enterprise Systems</h3>
-                    <span class="price">MWK 8,000,000 – 20,000,000+</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -197,7 +197,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-window" aria-hidden="true"></span></div>
                   <div>
                     <h3>Basic Website</h3>
-                    <span class="price">MWK 350,000 – 700,000</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -214,7 +214,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-globe" aria-hidden="true"></span></div>
                   <div>
                     <h3>Business Website</h3>
-                    <span class="price">MWK 800,000 – 1,800,000</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
@@ -232,7 +232,7 @@
                   <div class="pricing-icon"><span class="ui-icon ui-icon-code-slash" aria-hidden="true"></span></div>
                   <div>
                     <h3>Web Platform</h3>
-                    <span class="price">MWK 2,500,000 – 6,000,000</span>
+                    <span class="price">Contact us for a quote</span>
                   </div>
                 </div>
                 <ul class="pricing-list">
